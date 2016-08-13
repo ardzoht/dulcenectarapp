@@ -28,12 +28,16 @@ html
 
 		//- Include template-specific stylesheets by extending the css block
 		block css
-
+			link(href="/styles/css/material-kit.css", rel="stylesheet")
+			link(href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css", rel="stylesheet")
+			link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+			link(href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700", rel="stylesheet")
+		
 		//- Add any other template-specific HEAD tags by extending the head block
 		block head
 
 	//- HTML BODY
-	body
+	body.landing-page
 
 		//- HEADER
 		#header: .container
@@ -41,37 +45,40 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			div(role="navigation").navbar.navbar-default
-				.container-fluid
-					.navbar-header
-						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-						img(src='/images/logodulcenectarword.png', width='160')
-					.collapse.navbar-collapse
-						ul.nav.navbar-nav.navbar-left
-							each link in navLinks
-								if link.submenu
-									li.dropdown 
-										a.dropdown-toggle(href="#", data-toggle="dropdown", role="button")= link.label
-											span.caret
-										ul.dropdown-menu(role="menu")
-											each menu in link.submenu
-												li: a(href=menu.href)= menu.label
-								else
-									li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-						ul.nav.navbar-nav.navbar-right
-							if user
-								if user.canAccessKeystone
-									li: a(href='/keystone') Admin
-								li: a(href='/keystone/signout') Logout
+			nav(role="navigation").navbar.navbar-transparent.navbar-fixed-top.navbar-color-on-scroll.navbar-default
+				.navbar-header
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					img(src='/images/logodulcenectarword.png', width='160', class="logonectar")
+				.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-left
+						each link in navLinks
+							if link.submenu
+								li.dropdown 
+									a.dropdown-toggle(href="#", data-toggle="dropdown", role="button")= link.label
+										span.caret
+									ul.dropdown-menu(role="menu")
+										each menu in link.submenu
+											li: a(href=menu.href)= menu.label
 							else
-								li: a(href='/keystone/signin') Login
+								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+					ul.nav.navbar-nav.navbar-right
+						li: a(href="https://www.facebook.com/DulceNectarmx", class='btn btn-simple btn-white btn-just-icon')
+							i.fa.fa-facebook-square
+						li: a(href="https://www.instagram.com/dulcenectarmx", class='btn btn-simple btn-white btn-just-icon')
+							i.fa.fa-instagram
+						if user
+							if user.canAccessKeystone
+								li: a(href='/keystone') Admin
+							li: a(href='/keystone/signout', class="btn_log") Logout
+						else
+							li: a(href='/keystone/signin', class="btn btn-white btn-simple") Login
 
 		//- BODY
-		#body
+		#body: .wrapper
 
 			//- NOTE:
 			//- There is no .container wrapping class around body blocks to allow more flexibility in design.
@@ -107,6 +114,11 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
-
+		script(src='/js/js/material.min.js')
+		script(src='/js/js/material-kit.js')
+		script(src='/js/js/bootstrap-datepicker.js')
+		script(src='/js/js/nouislider.min.js')
+		
+		
 		//- Include template-specific javascript files by extending the js block
 		block js
