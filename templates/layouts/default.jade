@@ -45,37 +45,37 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			nav(role="navigation").navbar.navbar-transparent.navbar-fixed-top.navbar-color-on-scroll.navbar-default
+			nav(role="navigation").navbar.navbar-fixed-top.navbar-custom
 				.navbar-header
 					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
 						span.sr-only Toggle navigation
 						span.icon-bar
 						span.icon-bar
 						span.icon-bar
-					img(src='/images/logodulcenectarword.png', width='160', class="logonectar")
+					img(src='/images/img/logodulcenectar.png', width='90', class="logonectar")
 				.collapse.navbar-collapse
 					ul.nav.navbar-nav.navbar-left
 						each link in navLinks
 							if link.submenu
 								li.dropdown 
-									a.dropdown-toggle(href="#", data-toggle="dropdown", role="button")= link.label
+									a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", class="hi")= link.label
 										span.caret
 									ul.dropdown-menu(role="menu")
 										each menu in link.submenu
 											li: a(href=menu.href)= menu.label
 							else
-								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+								li(class=(section == link.key ? 'active' : null)): a(href=link.href, class="green-overline")= link.label
 					ul.nav.navbar-nav.navbar-right
-						li: a(href="https://www.facebook.com/DulceNectarmx", class='btn btn-simple btn-white btn-just-icon')
-							i.fa.fa-facebook-square
-						li: a(href="https://www.instagram.com/dulcenectarmx", class='btn btn-simple btn-white btn-just-icon')
-							i.fa.fa-instagram
-						if user
-							if user.canAccessKeystone
-								li: a(href='/keystone') Admin
-							li: a(href='/keystone/signout', class="btn_log") Logout
-						else
-							li: a(href='/keystone/signin', class="btn btn-white btn-simple") Login
+						li: a(href="https://www.facebook.com/DulceNectarmx", class="link-hidden") 
+							img(src="/images/img/fb_logo.png", class="logo-header")
+						li: a(href="https://www.instagram.com/dulcenectarmx", class="link-hidden") 
+							img(src="/images/img/insta-logo.png", class="logo-header")
+						//if user
+							//if user.canAccessKeystone
+								//li: a(href='/keystone') Admin
+							//li: a(href='/keystone/signout') Logout
+						//else
+							//li: a(href='/keystone/signin') Login
 
 		//- BODY
 		#body: .wrapper

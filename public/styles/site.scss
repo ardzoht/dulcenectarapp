@@ -31,9 +31,42 @@
 }
 
 .img-header {
-  background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');
+  background-image: url('https://placeholdit.imgix.net/~text?txtsize=114&txt=hello&w=1366&h=2000');
 }
 
 #header {
   margin-top:0;
+}
+
+
+.navbar-left {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.navbar-right {
+  margin-top: 2%;
+}
+
+.nav a {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em !important;
+  font-weight: bold !important;
+}
+
+.navbar-custom {
+  background-color: white !important;
+  color: black !important;
+}
+
+.logo-header {
+  width:40px;
+  border-radius: 15px;
+  padding:3px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.link-hidden {
+  padding: 0 !important;
 }
