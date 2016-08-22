@@ -45,7 +45,7 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			nav(role="navigation").navbar.navbar-fixed-top.navbar-custom
+			nav(role="navigation").navbar.navbar-fixed-top.navbar-color-on-scroll.navbar-custom
 				.navbar-header
 					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
 						span.sr-only Toggle navigation
@@ -81,6 +81,8 @@ html
 							i.fa.fa-facebook-official.logo-header.facebook-logo.aria-hidden
 						li: a(href="https://www.instagram.com/dulcenectarmx", class="hvr-bounce-in") 
 							i.fa.fa-instagram.logo-header.instagram-logo.aria-hidden
+						li: a(href="mailto:dulce.nectar.cuu@gmail.com", class="hvr-bounce-in") 
+							i.fa.fa-envelope-o.logo-header.mail-logo.aria-hidden
 						//if user
 							//if user.canAccessKeystone
 								//li: a(href='/keystone') Admin
