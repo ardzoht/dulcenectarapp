@@ -169,8 +169,31 @@ h1, h3 {
     font-size: 5em;
 }
 
+.post-title {
+  color: #152a47;
+  font-family: 'Amatic SC', cursive !important;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.post-title:hover {
+  color: brown;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  background-color:rgba(204, 204, 204, 0.31);
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .description {
   color: #999999;
   font-family: 'Quicksand', sans-serif !important;
   font-size: 1.5em;
+}
+
+.post-description {
+  color: black;
+  font-family: 'Quicksand', sans-serif !important;
 }
