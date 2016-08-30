@@ -63,60 +63,68 @@ h1, h3 {
   color: black !important;
 }
 
+.logo-fb-header {
+  width: 50px;
+  height:auto;
+  margin-top: -15px !important;
+}
+
+.logo-insta-header {
+  width: 60px;
+  height:auto;
+  margin-top: -20px !important;
+}
 
 .logo-header {
 	font-size:40px !important;
   	margin-top: -20px !important;
 }
 
-.facebook-logo {
-  color: #3b5998 !important;
-}
-
-.instagram-logo {
-  color: #dd4b39 !important;
-}
-
-.mail-logo {
-  color: green !important;
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .dropdown-menu li > a:hover {
-  background-color: rgba(0, 143, 0, 0.5) !important;
+  background-color: rgba(255, 183, 4, 1) !important;
 }
 
 .green-background:hover {
-  background-color: rgba(0, 143, 0, 0.5) !important;
+  background-color: rgba(255, 183, 4, 1) !important;
   border-radius: 3px;
   color: white;
 }
 
 .blue-background:hover {
-  background-color: rgba(0, 115, 200, 0.6) !important;
+  background-color: rgba(161, 206, 68, 1) !important;
   border-radius: 3px;
   color: white;
 }
 
 .brown-background:hover {
-  background-color: rgba(125, 108, 39, 0.6) !important;
+  background-color: rgba(226, 237, 111, 1) !important;
   border-radius: 3px;
   color: white;
 }
 
 .red-background:hover {
-  background-color: rgba(125, 0, 0, 0.6) !important;
+  background-color: rgba(170, 43, 79, 1) !important;
   border-radius: 3px;
   color: white;
 }
 
 .orange-background:hover {
-  background-color: rgba(255, 158, 0, 0.6) !important;
+  background-color: rgba(245, 106, 103, 1) !important;
   border-radius: 3px;
   color: white;
 }
 
 .purple-background:hover {
-  background-color: rgba(125, 0, 102, 0.6) !important;
+  background-color: rgba(247, 142, 140, 1) !important;
   border-radius: 3px;
   color: white;
 }

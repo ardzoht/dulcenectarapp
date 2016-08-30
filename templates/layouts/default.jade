@@ -77,12 +77,12 @@ html
 								else
 									li(class=(section == link.key ? 'active' : null)).hvr-float: a(href=link.href)= link.label
 					ul.nav.navbar-nav.navbar-right
-						li: a(href="https://www.facebook.com/DulceNectarmx", class="hvr-bounce-in") 
-							i.fa.fa-facebook-official.logo-header.facebook-logo.aria-hidden
-						li: a(href="https://www.instagram.com/dulcenectarmx", class="hvr-bounce-in") 
-							i.fa.fa-instagram.logo-header.instagram-logo.aria-hidden
-						li: a(href="mailto:dulce.nectar.cuu@gmail.com", class="hvr-bounce-in") 
-							i.fa.fa-envelope-o.logo-header.mail-logo.aria-hidden
+						li: a(href="https://www.facebook.com/DulceNectarmx", class="hvr-bounce-in svg") 
+							object.logo-fb-header(type="image/svg+xml" data='/images/img/facebook-logo.svg')
+						li: a(href="https://www.instagram.com/dulcenectarmx", class="hvr-bounce-in svg")
+							object.logo-insta-header(type="image/svg+xml" data='/images/img/instagram-logo.svg')
+						//li: a(href="mailto:dulce.nectar.cuu@gmail.com", class="hvr-bounce-in") 
+							//i.fa.fa-envelope-o.logo-header.mail-logo.aria-hidden
 						//if user
 							//if user.canAccessKeystone
 								//li: a(href='/keystone') Admin
