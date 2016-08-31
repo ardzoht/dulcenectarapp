@@ -12,19 +12,20 @@ var keystone = require('keystone');
 keystone.init({
 	'name': 'Dulce Nectar',
 	'brand': 'Dulce Nectar',
-
+	'host': '0.0.0.0',
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-
 	'emails': 'templates/emails',
-
 	'auto update': true,
+
 	'session': true,
 	'auth': true,
 	'user model': 'User',
+	'cloudinary config': 'cloudinary://298382599297723:Ky0PSwTN4du5F5GX1uA9e382IPQ@dqqg0mh8f',
+	'cookie secret': 'S=hyTT#GVeLIt3A,8th3cyiog{3:|i',
 });
 
 // Load your project's Models
@@ -71,6 +72,7 @@ keystone.set('nav', {
 	enquiries: 'enquiries',
 	users: 'users',
 });
+
 
 // Start Keystone to connect to your database and initialise the web server
 

@@ -28,12 +28,16 @@ html
 
 		//- Include template-specific stylesheets by extending the css block
 		block css
-
+			link(href="/styles/css/material-kit.css", rel="stylesheet")
+			link(href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css", rel="stylesheet")
+			link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+			link(href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700", rel="stylesheet")
+		
 		//- Add any other template-specific HEAD tags by extending the head block
 		block head
 
 	//- HTML BODY
-	body
+	body.landing-page
 
 		//- HEADER
 		#header: .container
@@ -41,29 +45,53 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			div(role="navigation").navbar.navbar-default
-				.container-fluid
-					.navbar-header
-						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-						a.navbar-brand(href='/') Dulce Nectar
-					.collapse.navbar-collapse
-						ul.nav.navbar-nav.navbar-left
-							each link in navLinks
-								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-						ul.nav.navbar-nav.navbar-right
-							if user
-								if user.canAccessKeystone
-									li: a(href='/keystone') Open Keystone
-								li: a(href='/keystone/signout') Sign Out
+			nav(role="navigation").navbar.navbar-fixed-top.navbar-color-on-scroll.navbar-custom
+				.navbar-header
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					img(src='/images/img/logodulcenectar.png', width='90', class="logonectar")
+				.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-left
+						each link in navLinks
+							if link.submenu
+								li(class=(section == link.key ? 'active' : null)).dropdown.green-background.hvr-float
+									a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", class="hi")= link.label
+										span.caret
+									ul.dropdown-menu(role="menu")
+										each menu in link.submenu
+											li: a(href=menu.href)= menu.label
 							else
-								li: a(href='/keystone/signin') Sign In
+								if link.key == 'home'
+									li(class='blue-background').hvr-float: a(href=link.href)= link.label
+								else if link.key == 'detox'
+									li(class='brown-background').hvr-float: a(href=link.href)= link.label
+								else if link.key == 'contact'
+									li(class='purple-background').hvr-float: a(href=link.href)= link.label
+								else if link.key == 'blog'
+									li(class='orange-background').hvr-float: a(href=link.href)= link.label
+								else if link.key == 'faq'
+									li(class='red-background').hvr-float: a(href=link.href)= link.label	
+								else
+									li(class=(section == link.key ? 'active' : null)).hvr-float: a(href=link.href)= link.label
+					ul.nav.navbar-nav.navbar-right
+						li: a(href="https://www.facebook.com/DulceNectarmx", class="hvr-bounce-in svg") 
+							object.logo-fb-header(type="image/svg+xml" data='/images/img/facebook-logo.svg')
+						li: a(href="https://www.instagram.com/dulcenectarmx", class="hvr-bounce-in svg")
+							object.logo-insta-header(type="image/svg+xml" data='/images/img/instagram-logo.svg')
+						//li: a(href="mailto:dulce.nectar.cuu@gmail.com", class="hvr-bounce-in") 
+							//i.fa.fa-envelope-o.logo-header.mail-logo.aria-hidden
+						//if user
+							//if user.canAccessKeystone
+								//li: a(href='/keystone') Admin
+							//li: a(href='/keystone/signout') Logout
+						//else
+							//li: a(href='/keystone/signin') Login
 
 		//- BODY
-		#body
+		#body: .wrapper
 
 			//- NOTE:
 			//- There is no .container wrapping class around body blocks to allow more flexibility in design.
@@ -82,11 +110,7 @@ html
 
 		//- FOOTER
 		.container: #footer
-
-			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
-
-
+			p.text-center © Copyright 2016, Dulce Néctar
 		//- JAVASCRIPT
 
 		//- jQuery 1.11.3 is included by default, and required by both Bootstrap
@@ -104,6 +128,11 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
-
+		script(src='/js/js/material.min.js')
+		script(src='/js/js/material-kit.js')
+		script(src='/js/js/bootstrap-datepicker.js')
+		script(src='/js/js/nouislider.min.js')
+		
+		
 		//- Include template-specific javascript files by extending the js block
 		block js

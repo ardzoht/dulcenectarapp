@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+
 #header {
 	margin-top: 30px;
 }
@@ -13,4 +15,63 @@
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.header-text {
+	float: none;
+display: table-cell;
+vertical-align: bottom;
+}
+
+// Blog
+
+.blog-container {
+	margin-top: 8%;
+	background-image: url('http://questkids.cl/wp-content/uploads/2014/07/parallax_back.jpg');
+	-moz-box-shadow:    inset 0 0 7px black;
+	-webkit-box-shadow: inset 0 0 7px black;
+	box-shadow:         inset 0 0 7px black;
+	background-position: 30% 20%;
+}
+
+.title-blog {
+	color:white;
+	padding: 20px;
+	font-weight: bold;
+}
+
+.posts-container {
+	background-color: white;
+	padding-left: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+}
+
+.posts-container p {
+	font-family: 'Quicksand', sans-serif !important;
+	font-size: 1.2em;
+	line-height: 150%;
+	text-align: justify;
+}
+
+.post-container {
+	margin-top: 10% !important;
+	padding-top: 2%;
+	padding-left: 0 ;
+	padding-bottom: 2%;
+
+}
+
+.post-container p {
+	font-family: 'Quicksand', sans-serif !important;
+	font-size: 1.3em;
+	line-height: 150%;
+	text-align: justify;
+}
+
+#footer {
+ color:black;
+ 	font-family: 'Quicksand', sans-serif !important;
+	font-size: 1.2em;
 }
