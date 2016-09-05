@@ -32,6 +32,7 @@ html
 			link(href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css", rel="stylesheet")
 			link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
 			link(href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700", rel="stylesheet")
+			
 		
 		//- Add any other template-specific HEAD tags by extending the head block
 		block head
@@ -110,7 +111,9 @@ html
 
 		//- FOOTER
 		.container: #footer
-			p.text-center © Copyright 2016, Dulce Néctar
+			footer.footer
+				img.footer-logo(src="/images/img/dulcenectartitle-word-logo.png")
+				span.text-center.footer-message © Copyright 2016, Dulce Néctar
 		//- JAVASCRIPT
 
 		//- jQuery 1.11.3 is included by default, and required by both Bootstrap
@@ -132,6 +135,7 @@ html
 		script(src='/js/js/material-kit.js')
 		script(src='/js/js/bootstrap-datepicker.js')
 		script(src='/js/js/nouislider.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js')
 		
 		
 		//- Include template-specific javascript files by extending the js block

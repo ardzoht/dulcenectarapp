@@ -5894,7 +5894,7 @@ h1, h3 {
   margin-left: 20px; }
 
 .img-header {
-  background-image: url("https://placeholdit.imgix.net/~text?txtsize=114&txt=hello&w=1366&h=750"); }
+  background-image: url("https://placeimg.com/1366/500/nature"); }
 
 #header {
   margin-top: 0; }
@@ -6031,10 +6031,34 @@ a.svg:after {
   border-radius: 5px; }
 
 .description {
-  color: #999999;
+  color: #000000 !important;
   font-family: 'Quicksand', sans-serif !important;
   font-size: 1.5em; }
 
 .post-description {
   color: black;
   font-family: 'Quicksand', sans-serif !important; }
+
+.header-about {
+  background-image: url("https://placeimg.com/1366/500/nature");
+  max-height: 400px; }
+
+.container-about {
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-decoration: none; }
+
+.container-about > h1 {
+  font-family: 'Amatic SC', cursive !important;
+  text-decoration: none;
+  font-weight: bold; }
+
+.footer-message {
+  display: inline-block;
+  margin-left: 20% !important; }
+
+.footer-logo {
+  height: auto;
+  width: 200px !important;
+  margin-top: -20px; }
