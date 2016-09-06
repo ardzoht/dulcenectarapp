@@ -21,8 +21,8 @@ exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: 'Home', key: 'home', href: '/' },
 		{ label: 'Detox', key: 'detox', href: '/gallery' },
-		{ label: 'Nosotros', key: 'aboutus', href: '/aboutus', submenu: [
-			{ label: '¿Quiénes somos?', key: 'whoarewe', href: '/aboutus' },
+		{ label: 'Nosotros', key: 'aboutus', href: '/', submenu: [
+			{ label: '¿Quiénes somos?', key: 'whoarewe', href: '/' },
 			{ label: '¿Qué es prensado en frío?', key: 'prensado_frio', href: '/' },
 			{ label: '¿Qué son los superfoods?', key: 'superfoods', href: '/' },
 		] },
