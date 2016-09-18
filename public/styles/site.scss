@@ -224,16 +224,18 @@ a.svg:after {
   font-weight: bold;
 }
 
-.footer {
-}
-
 .footer-message {
   	display: inline-block;
-  margin-left: 20% !important; 
+  margin-left: 20% !important;
 }
 
 .footer-logo {
   height:auto;
   width:200px !important;
   margin-top: -20px;
+}
+
+body, .wrapper {
+  background-image: url("/images/img/seamless_paper_texture.png") !important;
+  background-repeat: repeat;
 }

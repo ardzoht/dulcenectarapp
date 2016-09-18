@@ -6062,3 +6062,7 @@ a.svg:after {
   height: auto;
   width: 200px !important;
   margin-top: -20px; }
+
+body, .wrapper {
+  background-image: url("/images/img/seamless_paper_texture.png") !important;
+  background-repeat: repeat; }
