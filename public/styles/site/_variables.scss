@@ -1,5 +1,4 @@
 // Override Bootstrap variables in this file, e.g.
-
 $font-size-base: 14px;
 
 // Menu colors
@@ -7,8 +6,9 @@ $orange-background: rgba(255, 183, 4, 1);
 $green-background: rgba(161, 206, 68, 1);
 $light-green-background: rgba(226, 237, 111, 1);
 $purple-background: rgba(170, 43, 79, 1);
-$light-purple-background: rgba(245, 106, 103, 1);
+$peach-background: rgba(245, 106, 103, 1);
 $cream-background: rgba(247, 142, 140, 1);
+$transparent-background: rgba(0, 0, 0, 0);
 
 // General colors
 $black-color: #000000;
@@ -17,3 +17,20 @@ $blue-color: #152a47;
 $gray-color: #3C4858;
 $brown-color: brown;
 $hover-color: rgba(204, 204, 204, 0.31);
+
+// Fonts
+$general-font: 'Quicksand', sans-serif !important;
+$title-font: 'Amatic SC', cursive;
+
+// Mixins
+@mixin menu-button($color) {
+  border-radius: 3px;
+  color: white;
+  background-color: $color !important;
+}
+
+// Margin sizes
+$size-small: 5%;
+$size-medium: 10%;
+$size-large: 15%;
+$size-xlarge: 20%;

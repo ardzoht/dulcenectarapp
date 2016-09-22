@@ -5883,7 +5883,7 @@ button.close {
   font-size: 1.2em; }
 
 h1, h3 {
-  font-family: 'Quicksand', sans-serif !important; }
+  font-family: "Quicksand", sans-serif !important; }
 
 .navbar-right {
   padding-right: 10%; }
@@ -5906,13 +5906,13 @@ h1, h3 {
   margin-top: 2%; }
 
 .nav a {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 2em !important;
   font-weight: bold !important; }
 
 .navbar-custom {
   background-color: white !important;
-  color: black !important; }
+  color: #000000 !important; }
 
 .logo-fb-header {
   width: 50px;
@@ -5940,34 +5940,34 @@ a.svg:after {
   background-color: #ffb704 !important; }
 
 .green-background:hover {
-  background-color: #ffb704 !important;
   border-radius: 3px;
-  color: white; }
+  color: white;
+  background-color: #ffb704 !important; }
 
 .blue-background:hover {
-  background-color: #a1ce44 !important;
   border-radius: 3px;
-  color: white; }
+  color: white;
+  background-color: #a1ce44 !important; }
 
 .brown-background:hover {
-  background-color: #e2ed6f !important;
   border-radius: 3px;
-  color: white; }
+  color: white;
+  background-color: #e2ed6f !important; }
 
 .red-background:hover {
-  background-color: #aa2b4f !important;
   border-radius: 3px;
-  color: white; }
+  color: white;
+  background-color: #aa2b4f !important; }
 
 .orange-background:hover {
-  background-color: #f56a67 !important;
   border-radius: 3px;
-  color: white; }
+  color: white;
+  background-color: #f56a67 !important; }
 
 .purple-background:hover {
-  background-color: #f78e8c !important;
   border-radius: 3px;
-  color: white; }
+  color: white;
+  background-color: #f78e8c !important; }
 
 .hvr-float {
   display: inline-block;
@@ -6009,20 +6009,20 @@ a.svg:after {
 
 .title {
   color: #3C4858;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-weight: bold !important;
   font-size: 5em; }
 
 .post-title {
   color: #152a47;
-  font-family: 'Amatic SC', cursive !important;
+  font-family: "Amatic SC", cursive;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px; }
+  padding: 5%; }
 
 .post-title:hover {
   color: brown;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-weight: bold;
   text-decoration: none;
   background-color: rgba(204, 204, 204, 0.31);
@@ -6031,12 +6031,12 @@ a.svg:after {
 
 .description {
   color: #000000 !important;
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: "Quicksand", sans-serif !important;
   font-size: 1.5em; }
 
 .post-description {
-  color: black;
-  font-family: 'Quicksand', sans-serif !important; }
+  color: #000000;
+  font-family: "Quicksand", sans-serif !important; }
 
 .header-about {
   background-image: url("https://placeimg.com/1366/500/nature");
@@ -6044,12 +6044,12 @@ a.svg:after {
 
 .container-about {
   background-color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Amatic SC", cursive;
   font-weight: bold;
   text-decoration: none; }
 
 .container-about > h1 {
-  font-family: 'Amatic SC', cursive !important;
+  font-family: "Amatic SC", cursive;
   text-decoration: none;
   font-weight: bold; }
 
