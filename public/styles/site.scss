@@ -90,41 +90,41 @@ a.svg:after {
 }
 
 .dropdown-menu li > a:hover {
-  background-color: rgba(255, 183, 4, 1) !important;
+  background-color: $orange-background !important;
 }
 
 .green-background:hover {
-  background-color: rgba(255, 183, 4, 1) !important;
+  background-color: $orange-background !important;
   border-radius: 3px;
   color: white;
 }
 
 .blue-background:hover {
-  background-color: rgba(161, 206, 68, 1) !important;
+  background-color: $green-background !important;
   border-radius: 3px;
   color: white;
 }
 
 .brown-background:hover {
-  background-color: rgba(226, 237, 111, 1) !important;
+  background-color: $light-green-background !important;
   border-radius: 3px;
   color: white;
 }
 
 .red-background:hover {
-  background-color: rgba(170, 43, 79, 1) !important;
+  background-color: $purple-background !important;
   border-radius: 3px;
   color: white;
 }
 
 .orange-background:hover {
-  background-color: rgba(245, 106, 103, 1) !important;
+  background-color: $light-purple-background !important;
   border-radius: 3px;
   color: white;
 }
 
 .purple-background:hover {
-  background-color: rgba(247, 142, 140, 1) !important;
+  background-color: $cream-background !important;
   border-radius: 3px;
   color: white;
 }
@@ -171,14 +171,14 @@ a.svg:after {
 }
 
 .title {
-  color: #3C4858;
+  color: $gray-color;
     font-family: 'Amatic SC', cursive;
     font-weight: bold !important;
     font-size: 5em;
 }
 
 .post-title {
-  color: #152a47;
+  color: $blue-color;
   font-family: 'Amatic SC', cursive !important;
   font-weight: bold;
   text-decoration: none;
@@ -186,23 +186,23 @@ a.svg:after {
 }
 
 .post-title:hover {
-  color: brown;
+  color: $brown-color;
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
   text-decoration: none;
-  background-color:rgba(204, 204, 204, 0.31);
+  background-color:$hover-color;
   padding: 10px;
   border-radius: 5px;
 }
 
 .description {
-  color: #000000 !important;
+  color: $black-color !important;
   font-family: 'Quicksand', sans-serif !important;
   font-size: 1.5em;
 }
 
 .post-description {
-  color: black;
+  color: $black-color;
   font-family: 'Quicksand', sans-serif !important;
 }
 
@@ -212,7 +212,7 @@ a.svg:after {
 }
 
 .container-about {
-  background-color: white;
+  background-color: $white-color;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   text-decoration: none;
