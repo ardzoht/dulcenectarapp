@@ -1,13 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
 
 #header {
-	margin-top: 30px;
+	margin-top: $size-small;
 }
 
 #footer {
-	margin-top: 30px;
-	padding-top: 30px;
-	color: #777777;
+	margin-top: $size-small;
+	padding-top: $size-small;
+	color: $light-gray-color;
 }
 
 .gallery-image img{
@@ -18,59 +18,59 @@
 
 .header-text {
 	float: none;
-display: table-cell;
-vertical-align: bottom;
+	display: table-cell;
+	vertical-align: bottom;
 }
 
 // Blog
 
 .blog-container {
-	margin-top: 8%;
+	margin-top: $size-medium;
 	background-image: url('http://questkids.cl/wp-content/uploads/2014/07/parallax_back.jpg');
-	-moz-box-shadow:    inset 0 0 7px black;
-	-webkit-box-shadow: inset 0 0 7px black;
-	box-shadow:         inset 0 0 7px black;
+	-moz-box-shadow:    inset 0 0 7px $black-color;
+	-webkit-box-shadow: inset 0 0 7px $black-color;
+	box-shadow:         inset 0 0 7px $black-color;
 	background-position: 30% 20%;
 }
 
 .title-blog {
-	color:white;
+	color:$white-color;
 	padding: 20px;
 	font-weight: bold;
 }
 
 .posts-container {
-	background-color: white;
-	padding-left: 10%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	background-color: $white-color;
+	padding-left: $size-medium;
+	padding-top: $size-small;
+	padding-bottom: $size-small;
 
 }
 
 .posts-container p {
-	font-family: 'Quicksand', sans-serif !important;
+	font-family: $general-font;
 	font-size: 1.2em;
 	line-height: 150%;
 	text-align: justify;
 }
 
 .post-container {
-	margin-top: 10% !important;
+	margin-top: $size-medium !important;
 	padding-top: 2%;
-	padding-left: 0 ;
+	padding-left: 0;
 	padding-bottom: 2%;
 
 }
 
 .post-container p {
-	font-family: 'Quicksand', sans-serif !important;
+	font-family: $general-font;
 	font-size: 1.3em;
 	line-height: 150%;
 	text-align: justify;
 }
 
 #footer {
- color:black;
- 	font-family: 'Quicksand', sans-serif !important;
+ 	color:$black-color;
+ 	font-family: $general-font;
 	font-size: 1.2em;
 }
