@@ -25,6 +25,11 @@ h1, h3 {
   font-family: $general-font;
 }
 
+// Navbar stuff
+.navbar-header {
+  margin-top: 1%;
+}
+
 .navbar-right {
   padding-right: $size-medium;
 }
@@ -42,8 +47,16 @@ h1, h3 {
   margin-top:0;
 }
 
+.navbar {
+  padding: 0 !important;
+}
+
+.navbar-transparent {
+  padding-top: 0px !important;
+}
+
 .navbar-left {
-  margin-top: 2%;
+  margin-top: 3%;
   margin-left: $size-small;
 }
 
@@ -65,18 +78,24 @@ h1, h3 {
 .logo-fb-header {
   width: 50px;
   height:auto;
-  margin-top: -15px !important;
+  @include vertical-align();
 }
 
-.logo-insta-header {
+  .logo-insta-header {
   width: 60px;
   height:auto;
-  margin-top: -20px !important;
+  @include vertical-align();
+}
+
+.logo-mail-header {
+  width: 55px;
+  height: auto;
+  @include vertical-align();
 }
 
 .logo-header {
-	font-size:40px !important;
-  margin-top: -20px !important;
+	font-size:40px ;
+  margin-top: -20px ;
 }
 
 a.svg:after {
@@ -213,12 +232,12 @@ a.svg:after {
 
 .footer-message {
   display: inline-block;
-  margin-left: $size-xlarge !important;
+  margin-left: $size-xlarge;
 }
 
 .footer-logo {
   height:auto;
-  width:200px !important;
+  width:200px ;
   margin-top: -20px;
 }
 

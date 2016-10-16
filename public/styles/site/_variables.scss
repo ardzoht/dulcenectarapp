@@ -31,6 +31,15 @@ $title-font: 'Amatic SC', cursive;
   background-color: $color !important;
 }
 
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: 20px;
+}
+
 // Margin sizes
 $size-small: 5%;
 $size-medium: 10%;
