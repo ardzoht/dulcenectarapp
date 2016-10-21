@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var gulp-inject = require('gulp-inject')
 
 var paths = {
-	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json']
+	'src':['./models/**/*.js','./routes/**/*.js', 'server.js', 'package.json']
 ,
 	'style': {
 		all: './public/styles/**/*.scss',
@@ -26,7 +26,7 @@ gulp.task('sass', function(){
 });
 
 
-gulp.task('runKeystone', shell.task('node keystone.js'));
+gulp.task('runKeystone', shell.task('node server.js'));
 gulp.task('watch', [
   'watch:sass',
 ]);
