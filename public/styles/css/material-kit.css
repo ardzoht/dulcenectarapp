@@ -254,7 +254,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:hover {
-  background-color: #9c27b0;
+  background-color:#937656;
   color: #FFFFFF;
 }
 .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary:hover,
@@ -1391,7 +1391,7 @@ output {
 .form-control,
 .form-group .form-control {
   border: 0;
-  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: linear-gradient(red, red), linear-gradient(#D2D2D2, #D2D2D2);
   background-size: 0 2px, 100% 1px;
   background-repeat: no-repeat;
   background-position: center bottom, center calc(100% - 1px);
@@ -1404,17 +1404,17 @@ output {
 }
 .form-control::-moz-placeholder,
 .form-group .form-control::-moz-placeholder {
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-control:-ms-input-placeholder,
 .form-group .form-control:-ms-input-placeholder {
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-control::-webkit-input-placeholder,
 .form-group .form-control::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-control[readonly], .form-control[disabled], fieldset[disabled] .form-control,
@@ -1450,7 +1450,7 @@ output {
 }
 .form-group.is-focused .form-control {
   outline: none;
-  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: linear-gradient(rgba(245, 106, 103, 1), rgba(245, 106, 103, 1)), linear-gradient(#D2D2D2, #D2D2D2);
   background-size: 100% 2px, 100% 1px;
   box-shadow: none;
   transition-duration: 0.3s;
@@ -1576,19 +1576,19 @@ label.control-label {
 .form-group .form-control::-moz-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group .form-control:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group .form-control::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group .checkbox label,
@@ -1596,13 +1596,13 @@ label.control-label {
 .form-group label {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group label.control-label {
   font-size: 11px;
   line-height: 1.07143;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
   margin: 16px 0 0 0;
 }
@@ -1638,19 +1638,19 @@ label.control-label {
 .form-group.form-group-sm .form-control::-moz-placeholder {
   font-size: 11px;
   line-height: 1.5;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group.form-group-sm .form-control:-ms-input-placeholder {
   font-size: 11px;
   line-height: 1.5;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group.form-group-sm .form-control::-webkit-input-placeholder {
   font-size: 11px;
   line-height: 1.5;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group.form-group-sm .checkbox label,
@@ -1658,13 +1658,13 @@ label.control-label {
 .form-group.form-group-sm label {
   font-size: 11px;
   line-height: 1.5;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group.form-group-sm label.control-label {
   font-size: 9px;
   line-height: 1.125;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
   margin: 16px 0 0 0;
 }
@@ -1700,19 +1700,19 @@ label.control-label {
 .form-group.form-group-lg .form-control::-moz-placeholder {
   font-size: 18px;
   line-height: 1.33333;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group.form-group-lg .form-control:-ms-input-placeholder {
   font-size: 18px;
   line-height: 1.33333;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group.form-group-lg .form-control::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 1.33333;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group.form-group-lg .checkbox label,
@@ -1720,13 +1720,13 @@ label.control-label {
 .form-group.form-group-lg label {
   font-size: 18px;
   line-height: 1.33333;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
 }
 .form-group.form-group-lg label.control-label {
   font-size: 14px;
   line-height: 1.0;
-  color: #AAAAAA;
+  color: gray;
   font-weight: 400;
   margin: 16px 0 0 0;
 }

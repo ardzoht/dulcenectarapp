@@ -5882,6 +5882,25 @@ button.close {
   font-family: "Quicksand", sans-serif !important;
   font-size: 1.2em; }
 
+.contact {
+  margin-top: 11%;
+  text-align: center; }
+
+.contact-label {
+  color: #282828; }
+
+.form-green {
+  width: 95%;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  box-sizing: border-box;
+  border-radius: 2px; }
+
 h1, h3 {
   font-family: "Quicksand", sans-serif !important; }
 

@@ -1,34 +1,48 @@
 extends ../layouts/default
 
 block intro
-	.container
-		h1 Contact Us
-		
+	.container.contact
+		h1 Contáctanos 
+
 block content
 	.container
 		if enquirySubmitted
-			h3 Thanks for getting in touch.
+			h3 Gracias por sus comentarios.
 		else
-			.row: .col-sm-8.col-md-6
+			.row: .col-sm-8.col-md-12
 				form(method='post')
-					input(type='hidden', name='action', value='contact')
-					.form-group(class=validationErrors.name ? 'has-error' : null)
-						label Name
-						input(type='text', name='name.full', value=formData['name.full']).form-control
-					.form-group(class=validationErrors.email ? 'has-error' : null)
-						label Email
-						input(type='email', name='email', value=formData.email).form-control
-					.form-group
-						label Phone
-						input(type='text', name='phone', value=formData.phone, placeholder='(optional)').form-control
-					.form-group(class=validationErrors.enquiryType ? 'has-error' : null)
-						label What are you contacting us about?
-						select(name='enquiryType').form-control
-							option(value='') (select one)
-							each type in enquiryTypes
-								option(value=type.value, selected=formData.enquiryType == type.value)= type.label
-					.form-group(class=validationErrors.message ? 'has-error' : null)
-						label Message
-						textarea(name='message', placeholder='Leave us a message...' rows=4).form-control= formData.message
+					.row
+						.col-sm-4.col-md-6
+							.form-group(class=validationErrors.name ? 'has-error' : null)
+								.row
+									label.contact-label Nombre
+								.row
+									input(type='text', name='name.full', value=formData['name.full']).form-green
+							.form-group
+								.row
+									label.contact-label Teléfono
+								.row
+									input(type='text', name='phone', value=formData.phone, placeholder='(opcional)').form-green
+							.form-group(class=validationErrors.message ? 'has-error' : null)
+								.row
+									label.contact-label Mensaje
+								.row
+									textarea(name='message', placeholder='Dejanos un mensaje...' rows=4).form-green= formData.message
+						.col-sm-4.col-md-6
+							.form-group(class=validationErrors.email ? 'has-error' : null)
+								.row
+									label.contact-label Email
+								.row
+									input(type='email', name='email', value=formData.email).form-green
+							.form-group(class=validationErrors.email ? 'has-error' : null)
+								.row
+									label.contact-label Asunto
+								.row
+									input(type='text', name='subject', value=formData.email).form-green
 					.form-actions
-						button(type='submit').btn.btn-primary Send
+						.row: col-sm-8.col-md-12
+							.row
+								.col-sm-4.col-md-5
+								.col-sm-4.col-md-5
+									br
+									button(type='submit').btn.btn-primary OK

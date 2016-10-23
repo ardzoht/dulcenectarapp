@@ -3,7 +3,6 @@ var feed = new Instafeed({
   userId: '3284850548',
   accessToken: '3284850548.1677ed0.26b34edc44fe47a5922cd17a26211ba6',
 	sortBy: 'most-recent',
-	resolution: 'low-resolution',
 	after: () => {
 		console.log("Images retrieved");
 	},

@@ -74,5 +74,6 @@ keystone.set('nav', {
 
 
 // Start Keystone to connect to your database and initialise the web server
+keystone.set('mongo', "mongodb://ardzoht:101010as@ds061246.mlab.com:61246/dulcenectardb")
 
 keystone.start();
