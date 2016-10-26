@@ -17,32 +17,34 @@ block content
 								.row
 									label.contact-label Nombre
 								.row
-									input(type='text', name='name.full', value=formData['name.full']).form-green
+									input(type='text', name='name.full', value=formData['name.full']).form-contact
 							.form-group
 								.row
 									label.contact-label Teléfono
 								.row
-									input(type='text', name='phone', value=formData.phone, placeholder='(opcional)').form-green
-							.form-group(class=validationErrors.message ? 'has-error' : null)
-								.row
-									label.contact-label Mensaje
-								.row
-									textarea(name='message', placeholder='Dejanos un mensaje...' rows=4).form-green= formData.message
+									input(type='text', name='phone', value=formData.phone, placeholder='(opcional)').form-contact
 						.col-sm-4.col-md-6
 							.form-group(class=validationErrors.email ? 'has-error' : null)
 								.row
 									label.contact-label Email
 								.row
-									input(type='email', name='email', value=formData.email).form-green
+									input(type='email', name='email', value=formData.email).form-contact
 							.form-group(class=validationErrors.email ? 'has-error' : null)
 								.row
 									label.contact-label Asunto
 								.row
-									input(type='text', name='subject', value=formData.email).form-green
+									input(type='text', name='subject', value=formData.email).form-contact
+					.row
+						.col-sm-5.col-md-8.col-md-offset-2
+							.form-group(class=validationErrors.message ? 'has-error' : null)
+								.row
+									label.contact-label Mensaje
+								.row
+									textarea(name='message', placeholder='Dejanos un mensaje...' rows=4).form-contact= formData.message
 					.form-actions
 						.row: col-sm-8.col-md-12
 							.row
 								.col-sm-4.col-md-5
 								.col-sm-4.col-md-5
 									br
-									button(type='submit').btn.btn-primary OK
+									button(type='submit').btn.btn-primary Enviar
