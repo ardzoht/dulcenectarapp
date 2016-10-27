@@ -24,7 +24,7 @@ mixin post(post)
 
 block intro
 	.container-fluid.blog-container
-		h1.text-center.title-blog= data.category ? data.category.name : 'Blog'
+		h2.title.text-center(style="color:white;")= data.category ? data.category.name : 'blog'
 
 block content
 	.container-fluid.posts-container: .row
@@ -68,7 +68,7 @@ block content
 		
 		if data.categories.length
 			.col-sm-4.col-md-3
-				h2 Categories
+				h2 Categorias
 				.list-group(style='margin-top: 70px;')
 					a(href='/blog', class=!data.category ? 'active' : false).list-group-item Todas las categorías
 					each cat in data.categories

@@ -32,6 +32,7 @@ html
 			link(href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css", rel="stylesheet")
 			link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
 			link(href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700", rel="stylesheet")
+			link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
 			
 		
 		//- Add any other template-specific HEAD tags by extending the head block
@@ -46,7 +47,7 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			nav(role="navigation").navbar.navbar-fixed-top.navbar-color-on-scroll.navbar-custom
+			nav(role="navigation").navbar.navbar-fixed-top.navbar-custom
 				.navbar-header
 					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
 						span.sr-only Toggle navigation
@@ -111,7 +112,7 @@ html
 
 		//- FOOTER
 		.container: #footer
-			footer.footer
+			footer
 				img.footer-logo(src="/images/img/dulcenectartitle-word-logo.png")
 				span.text-center.footer-message © Copyright 2016, Dulce Néctar
 		//- JAVASCRIPT
@@ -119,12 +120,12 @@ html
 		//- jQuery 1.11.3 is included by default, and required by both Bootstrap
 		//- and the KeystoneJS Content Editor. If you are not targeting IE8,
 		//- you can upgrade to 2.1.4 (also bundled) for better performance.
-		script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+		script(src="https://code.jquery.com/jquery-1.12.4.js")
 
 		//- Customise which Bootstrap javascript files are served by including
 		//- them specifically here, instead of bootstrap-3.3.5.min.js
-		script(src='/js/js/bootstrap.min.js')
-
+		script(src='/js/bootstrap/bootstrap-3.3.5.min.js')
+		script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
 		//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 		//- which generate links to edit content for users who can access Keystone
 		if user && user.canAccessKeystone

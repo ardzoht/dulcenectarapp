@@ -5825,11 +5825,6 @@ button.close {
 #header {
   margin-top: 5%; }
 
-#footer {
-  margin-top: 5%;
-  padding-top: 5%;
-  color: #777777; }
-
 .gallery-image img {
   display: block;
   max-width: 100%;
@@ -5880,9 +5875,10 @@ button.close {
 #footer {
   color: #000000;
   font-family: "Quicksand", sans-serif !important;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  padding-top: 5%; }
 
-.contact {
+.header-title {
   margin-top: 11%;
   text-align: center; }
 
@@ -5915,20 +5911,20 @@ button.close {
 .slide1 {
   background: url("/images/img/Portada.jpg") no-repeat center;
   background-size: cover;
-  animation: fade 26s infinite;
-  -webkit-animation: fade 26s infinite; }
+  animation: fade 15s infinite;
+  -webkit-animation: fade 15s infinite; }
 
 .slide2 {
   background: url("/images/img/_MG_6847.jpg") no-repeat center;
   background-size: cover;
-  animation: fade2 26s infinite;
-  -webkit-animation: fade2 26s infinite; }
+  animation: fade2 15s infinite;
+  -webkit-animation: fade2 15s infinite; }
 
 .slide3 {
   background: url("/images/img/_MG_6800.jpg") no-repeat center;
   background-size: cover;
-  animation: fade3 26s infinite;
-  -webkit-animation: fade3 26s infinite; }
+  animation: fade3 15s infinite;
+  -webkit-animation: fade3 15s infinite; }
 
 @keyframes fade {
   0% {
@@ -6167,5 +6163,5 @@ a.svg:after {
   margin-top: -20px; }
 
 body, .wrapper {
-  background-image: url("/images/img/seamless_paper_texture.png") !important;
+  background-color: #f5f9df !important;
   background-repeat: repeat; }
