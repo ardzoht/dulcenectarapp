@@ -184,7 +184,6 @@ a.svg:after {
   font-family: $title-font;
   font-weight: bold;
   text-decoration: none;
-  padding: $size-small;
 }
 
 .post-title:hover {
@@ -192,9 +191,6 @@ a.svg:after {
   font-family: $title-font;
   font-weight: bold;
   text-decoration: none;
-  background-color:$hover-color;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 .description {
