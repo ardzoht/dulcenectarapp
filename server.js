@@ -72,6 +72,7 @@ keystone.set('nav', {
 	users: 'users',
 });
 
+keystone.set('cloudinary config', 'cloudinary://298382599297723:Ky0PSwTN4du5F5GX1uA9e382IPQ@dqqg0mh8f' );
 
 // Start Keystone to connect to your database and initialise the web server
 keystone.set('mongo', "mongodb://ardzoht:101010as@ds061246.mlab.com:61246/dulcenectardb")
