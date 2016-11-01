@@ -4,7 +4,7 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var Program = new keystone.List('DetoxItem', {
+var Program = new keystone.List('Program', {
 	autokey: {path: 'slug', from: 'name', unique: true},
 	map: {name: 'name'},
 	defaultSort: '-createdAt'

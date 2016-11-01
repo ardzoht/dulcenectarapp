@@ -18,8 +18,9 @@ DetoxItem.add({
 	createdAt: {type: Date, default: Date.now},
 	description: {type: String},
 	image: {type: Types.CloudinaryImage},
-	program: {type: Types.Relationship, ref: 'Program'}
 });
 
 DetoxItem.defaultColumns = 'name, createdAt, description, image, program';
+
+DetoxItem.relationship({ref: 'Program', path:'items' });
 DetoxItem.register();
