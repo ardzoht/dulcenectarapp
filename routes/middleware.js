@@ -20,7 +20,7 @@ var _ = require('lodash');
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'Detox', key: 'detox', href: '/gallery' },
+		{ label: 'Detox', key: 'detox', href: '/detox' },
 		{ label: 'Nosotros', key: 'aboutus', href: '/aboutus', submenu: [
 			{ label: '¿Quiénes somos?', key: 'whoarewe', href: '/aboutus' },
 			{ label: '¿Qué es prensado en frío?', key: 'prensado_frio', href: '/coldpressed' },
@@ -43,7 +43,7 @@ exports.flashMessages = function (req, res, next) {
 		info: req.flash('info'),
 		success: req.flash('exito'),
 		warning: req.flash('aviso'),
-		error: req.flash('error'),
+		error: req.flash('error')
 	};
 	res.locals.messages = _.some(flashMessages, function (msgs) { return msgs.length; }) ? flashMessages : false;
 	next();

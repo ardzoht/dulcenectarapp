@@ -55,9 +55,9 @@ keystone.set('email locals', {
 		buttons: {
 			color: '#fff',
 			background_color: '#2697de',
-			border_color: '#1a7cb7',
-		},
-	},
+			border_color: '#1a7cb7'
+		}
+	}
 });
 
 // Load your project's email test routes
@@ -67,9 +67,9 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
-	galleries: 'galleries',
-	enquiries: 'enquiries',
-	users: 'users',
+	programs: 'programs',
+	users: 'users'
+	
 });
 
 keystone.set('cloudinary config', 'cloudinary://298382599297723:Ky0PSwTN4du5F5GX1uA9e382IPQ@dqqg0mh8f' );

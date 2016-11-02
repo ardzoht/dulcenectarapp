@@ -60,7 +60,7 @@ html
 						each link in navLinks
 							if link.submenu
 								li(class=(section == link.key ? 'active' : null)).dropdown.green-background.hvr-float
-									a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", class="hi")= link.label
+									a.dropdown-toggle(href="#", data-toggle="dropdown", role="button")= link.label
 										span.caret
 									ul.dropdown-menu(role="menu")
 										each menu in link.submenu
