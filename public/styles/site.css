@@ -5987,6 +5987,10 @@ button.close {
   100% {
     opacity: 0; } }
 
+.program-image {
+  width: 100%;
+  height: auto; }
+
 h1, h3 {
   font-family: "Quicksand", sans-serif !important; }
 

@@ -1,8 +1,20 @@
 extends ../layouts/default
 
+mixin program(program)
+	div.col-md-4
+		div.card
+			img.card-image.program-image(src=program.image.url)
+			div.card-block
+				h4.card-title= program.name
+				div.card-text= program.description
+				a.btn.btn-primary(href='/program/' + program.slug) Más	
+
 block content
 	div.header-title
 		div.container
 			div.text-center
 				h2.title detox
-				div.row
+				div.row: .col-md-12
+					each program in data.programs
+						+program(program)
+
