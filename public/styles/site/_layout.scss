@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
 
 #header {
 	margin-top: $size-small;
@@ -128,7 +128,7 @@
 }
 
 // Slider stuff
-.slider {
+#slider {
   max-width: 100%;
   height: 620px;
   margin: $size-small auto;
@@ -137,56 +137,29 @@
   -moz-box-shadow: 1px 6px 44px -5px rgba(0,0,0,.5);
   box-shadow: 1px 6px 44px -5px rgba(0,0,0,.5);
 }
-.slide1,.slide2,.slide3 {
+#slider img {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  z-index: 1;
+  max-height: 100%;
+  min-width: 100%;
 }
 
-
-.slide1 {
-  background: url("/images/img/Portada.jpg") no-repeat center;
-  background-size: cover;
-  animation:fade 15s infinite;
-  -webkit-animation:fade 15s infinite;
-
-}
-.slide2 {
-  background: url("/images/img/_MG_6847.jpg")no-repeat center;
-  background-size: cover;
-  animation:fade2 15s infinite;
-  -webkit-animation:fade2 15s infinite;
-}
-.slide3 {
-  background: url("/images/img/_MG_6800.jpg")no-repeat center;
-  background-size: cover;
-  animation:fade3 15s infinite;
-  -webkit-animation:fade3 15s infinite;
+#slider img.active {
+  z-index: 3;
 }
 
-@keyframes fade
-{
-  0%   {opacity:1}
-  33.333% { opacity: 0}
-  66.666% { opacity: 0}
-  100% { opacity: 1}
-}
-@keyframes fade2
-{
-  0%   {opacity:0}
-  33.333% { opacity: 1}
-  66.666% { opacity: 0 }
-  100% { opacity: 0}
-}
-@keyframes fade3
-{
-  0%   {opacity:0}
-  33.333% { opacity: 0}
-  66.666% { opacity: 1}
-  100% { opacity: 0}
+#accordion {
+  cursor: pointer;
 }
 
-.program-image {
-  width: 100%;
-  height: auto;
+.fa-arrow-down {
+  font-size: 60% !important;
+}
+
+#accordion > h4 {
+  margin-top: 20px;
+}
+
+#accordion > h4:first-child {
+  margin-top: 0;
 }
