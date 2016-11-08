@@ -1,18 +1,14 @@
 extends ../layouts/default
 
 block content
-	div.header
-		div.container-fluid
-			div.row
-				div#slider
-					img.active.img-responsive(src="/images/img/Portada.jpg")
-					img.img-responsive(src="/images/img/_MG_6847.jpg")
-					img.img-responsive(src="/images/img/_MG_6800.jpg")
-						
 	div.container-fluid
-		div.section.text-center.section-landing
-			div.row
-				div.col-md-8.col-md-offset-2
-					h2.title COMUNIDAD
-						div#instafeed
+		div.row
+			div#slider
+				img.active.img-responsive(src="/images/img/Portada.jpg")
+				img.img-responsive(src="/images/img/_MG_6847.jpg")
+				img.img-responsive(src="/images/img/_MG_6800.jpg")
+		div.row
+			div.col-md-8.col-md-offset-2
+				h2.title.text-center COMUNIDAD
+					div#instafeed
 

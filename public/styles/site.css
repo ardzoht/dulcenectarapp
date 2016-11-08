@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5883,7 +5883,7 @@ button.close {
   padding-bottom: 5%; }
 
 .posts-container p {
-  font-family: "Quicksand", sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   font-size: 1.2em;
   line-height: 150%;
   text-align: justify; }
@@ -5895,14 +5895,14 @@ button.close {
   padding-bottom: 2%; }
 
 .post-container p {
-  font-family: "Quicksand", sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   font-size: 1.3em;
   line-height: 150%;
   text-align: justify; }
 
 #footer {
   color: #000000;
-  font-family: "Quicksand", sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   font-size: 1.2em;
   padding-top: 5%; }
 
@@ -5925,7 +5925,7 @@ button.close {
   box-sizing: border-box;
   border-radius: 2px; }
 
-.slider {
+#slider {
   max-width: 100%;
   height: 620px;
   margin: 5% auto;
@@ -5934,65 +5934,32 @@ button.close {
   -moz-box-shadow: 1px 6px 44px -5px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 6px 44px -5px rgba(0, 0, 0, 0.5); }
 
-.slide1, .slide2, .slide3 {
+#slider img {
   position: absolute;
-  width: 100%;
-  height: 100%; }
+  z-index: 1;
+  max-height: 100%;
+  min-width: 100%; }
 
-.slide1 {
-  background: url("/images/img/Portada.jpg") no-repeat center;
-  background-size: cover;
-  animation: fade 15s infinite;
-  -webkit-animation: fade 15s infinite; }
+#slider img.active {
+  z-index: 3; }
 
-.slide2 {
-  background: url("/images/img/_MG_6847.jpg") no-repeat center;
-  background-size: cover;
-  animation: fade2 15s infinite;
-  -webkit-animation: fade2 15s infinite; }
+#accordion {
+  cursor: pointer; }
 
-.slide3 {
-  background: url("/images/img/_MG_6800.jpg") no-repeat center;
-  background-size: cover;
-  animation: fade3 15s infinite;
-  -webkit-animation: fade3 15s infinite; }
+.fa-arrow-down {
+  font-size: 60% !important; }
 
-@keyframes fade {
-  0% {
-    opacity: 1; }
-  33.333% {
-    opacity: 0; }
-  66.666% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+#accordion > h4 {
+  margin-top: 20px; }
 
-@keyframes fade2 {
-  0% {
-    opacity: 0; }
-  33.333% {
-    opacity: 1; }
-  66.666% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
+#accordion > h4:first-child {
+  margin-top: 0; }
 
-@keyframes fade3 {
-  0% {
-    opacity: 0; }
-  33.333% {
-    opacity: 0; }
-  66.666% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-.program-image {
-  width: 100%;
-  height: auto; }
+.navbar-fixed-top {
+  height: 110px; }
 
 h1, h3 {
-  font-family: "Quicksand", sans-serif !important; }
+  font-family: "Titillium Web", sans-serif !important; }
 
 .navbar-header {
   margin-top: 1%; }
@@ -6014,11 +5981,11 @@ h1, h3 {
   padding-top: 0px !important; }
 
 .navbar-left {
-  margin-top: 3%;
+  margin-top: 2.5%;
   margin-left: 5%; }
 
 .navbar-right {
-  margin-top: 2%; }
+  margin-top: 1.5%; }
 
 .nav a {
   font-family: "Amatic SC", cursive;
@@ -6058,10 +6025,6 @@ h1, h3 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-top: 20px; }
-
-.logo-header {
-  font-size: 40px;
-  margin-top: -20px; }
 
 a.svg:after {
   content: "";
@@ -6162,12 +6125,12 @@ a.svg:after {
 
 .description {
   color: #000000 !important;
-  font-family: "Quicksand", sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   font-size: 1.5em; }
 
 .post-description {
   color: #000000;
-  font-family: "Quicksand", sans-serif !important; }
+  font-family: "Titillium Web", sans-serif !important; }
 
 .header-about {
   background-image: url("https://placeimg.com/1366/500/nature");
