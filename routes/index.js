@@ -39,7 +39,7 @@ exports = module.exports = function (app) {
 	app.get('/blog/post/:post', routes.views.post);
 	app.all('/contact', routes.views.contact);
 	app.get('/aboutus', routes.views.aboutus);
-	app.get('/coldpressed', routes.views.coldpressed);
+	app.get('/our_difference', routes.views.ourdiff);
 	app.get('/superfoods', routes.views.superfoods);
 	app.get('/faq', routes.views.faq);
 	app.get('/detox', routes.views.detox);

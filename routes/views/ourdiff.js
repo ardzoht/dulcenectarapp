@@ -10,5 +10,5 @@ exports = module.exports = function (req, res) {
 	locals.section = 'coldpressed';
 
 	// Render the view
-	view.render('coldpressed');
+	view.render('ourdiff');
 };

@@ -23,7 +23,7 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Detox', key: 'detox', href: '/detox' },
 		{ label: 'Nosotros', key: 'aboutus', href: '/aboutus', submenu: [
 			{ label: '¿Quiénes somos?', key: 'whoarewe', href: '/aboutus' },
-			{ label: '¿Qué es prensado en frío?', key: 'prensado_frio', href: '/coldpressed' },
+			{ label: '¿Qué es prensado en frío?', key: 'prensado_frio', href: '/our_difference' },
 			{ label: '¿Qué son los superfoods?', key: 'superfoods', href: '/superfoods' },
 		] },
 		{ label: 'Contacto', key: 'contact', href: '/contact' },

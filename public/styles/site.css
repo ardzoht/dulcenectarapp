@@ -6157,5 +6157,5 @@ a.svg:after {
   margin-top: -20px; }
 
 body, .wrapper {
-  background-color: #f5f9df !important;
+  background: url("/images/img/halftone.png") !important;
   background-repeat: repeat; }
