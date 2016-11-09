@@ -229,6 +229,26 @@ a.svg:after {
 }
 
 body, .wrapper {
-  background: url('/images/img/halftone.png') !important;
+  background: url('/images/img/tileable_wood_texture.png') !important;
   background-repeat: repeat;
+}
+
+#accordion {
+  cursor: pointer;
+}
+
+.fa-arrow-down {
+  font-size: 60% !important;
+}
+
+#accordion > h4 {
+  margin-top: 20px;
+}
+
+#accordion > h4:first-child {
+  margin-top: 0;
+}
+
+.navbar-fixed-top {
+  height: 110px;
 }
