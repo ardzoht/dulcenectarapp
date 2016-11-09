@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7e5b129-d1a2-41af-ba22-aac99daf1b56" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img/halftone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/views/coldpressed.js" afterPath="$PROJECT_DIR$/routes/views/ourdiff.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/views/coldpressed.jade" afterPath="$PROJECT_DIR$/templates/views/ourdiff.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site.css" afterPath="$PROJECT_DIR$/public/styles/site.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site.scss" afterPath="$PROJECT_DIR$/public/styles/site.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/middleware.js" afterPath="$PROJECT_DIR$/routes/middleware.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site/_layout.scss" afterPath="$PROJECT_DIR$/public/styles/site/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/views/detox.jade" afterPath="$PROJECT_DIR$/templates/views/detox.jade" />
     </list>
     <ignored path="dulce-nectar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,71 +29,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/styles/site/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="518">
+              <caret line="151" column="2" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detox.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/views/detox.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/styles/site.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="231" column="43" selection-start-line="231" selection-start-column="43" selection-end-line="231" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/layouts/default.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="51" column="93" selection-start-line="51" selection-start-column="93" selection-end-line="51" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ourdiff.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/views/ourdiff.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/views/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="middleware.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/middleware.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="25" column="94" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
+            <state relative-caret-position="586">
+              <caret line="253" column="1" selection-start-line="253" selection-start-column="1" selection-end-line="253" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -144,14 +102,14 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/routes/views/detox.js" />
         <option value="$PROJECT_DIR$/routes/views/blog.js" />
-        <option value="$PROJECT_DIR$/templates/views/detox.jade" />
-        <option value="$PROJECT_DIR$/public/styles/site/_layout.scss" />
         <option value="$PROJECT_DIR$/templates/layouts/default.jade" />
         <option value="$PROJECT_DIR$/templates/views/index.jade" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/middleware.js" />
         <option value="$PROJECT_DIR$/routes/views/ourdiff.js" />
+        <option value="$PROJECT_DIR$/templates/views/detox.jade" />
         <option value="$PROJECT_DIR$/public/styles/site.scss" />
+        <option value="$PROJECT_DIR$/public/styles/site/_layout.scss" />
       </list>
     </option>
   </component>
@@ -199,7 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,6 +264,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,7 +272,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="editor.config.accepted" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="coldpress&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/coldpressed.jade&#10;routes&#9;null&#9;null&#10;index.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/index.jade&#10;defau&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/layouts/default.jade&#10;site.s&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site.scss&#10;layout&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site/_layout.scss&#10;post.js&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/routes/views/post.js&#10;blog.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/blog.jade&#10;cold&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/coldpressed.jade&#10;superfood&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/superfoods.jade&#10;site.scss&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site.scss&#10;post.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/post.jade&#10;blog.&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/blog.jade&#10;faq.ja&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/faq.jade&#10;scss&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site/_layout.scss&#10;default&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/layouts/default.jade&#10;faq.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/faq.jade&#10;contact.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/contact.jade&#10;aboutus&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/aboutus.jade&#10;index.js&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/js/js/index.js&#10;faq.&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/faq.jade&#10;variables&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/bootstrap/bootstrap/_variables.scss&#10;layo&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site/_layout.scss&#10;index.j&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/index.jade&#10;contact.&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/contact.jade&#10;section&#9;null&#9;null&#10;navbar-defa&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="detox.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/detox.jade&#10;coldpress&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/coldpressed.jade&#10;routes&#9;null&#9;null&#10;index.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/index.jade&#10;defau&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/layouts/default.jade&#10;site.s&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site.scss&#10;layout&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site/_layout.scss&#10;post.js&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/routes/views/post.js&#10;blog.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/blog.jade&#10;cold&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/coldpressed.jade&#10;superfood&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/superfoods.jade&#10;site.scss&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site.scss&#10;post.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/post.jade&#10;blog.&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/blog.jade&#10;faq.ja&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/faq.jade&#10;scss&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site/_layout.scss&#10;default&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/layouts/default.jade&#10;faq.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/faq.jade&#10;contact.jade&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/contact.jade&#10;aboutus&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/aboutus.jade&#10;index.js&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/js/js/index.js&#10;faq.&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/faq.jade&#10;variables&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/bootstrap/bootstrap/_variables.scss&#10;layo&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/public/styles/site/_layout.scss&#10;index.j&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/index.jade&#10;contact.&#9;FILE&#9;file://C:/Users/Alejandro/Documents/Development/dulce-nectar/templates/views/contact.jade&#10;section&#9;null&#9;null&#10;navbar-defa&#9;null&#9;null" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
@@ -419,6 +377,7 @@
       <workItem from="1477888979208" duration="202000" />
       <workItem from="1478042147163" duration="1689000" />
       <workItem from="1478238937011" duration="2487000" />
+      <workItem from="1478660922380" duration="1422000" />
     </task>
     <task id="LOCAL-00001" summary="added images to site">
       <created>1477539283745</created>
@@ -445,7 +404,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45034000" />
+    <option name="totallyTimeSpent" value="47055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -457,18 +416,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -762,26 +721,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/detox.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/site/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,15 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/ourdiff.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,16 +769,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layouts/default.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="17">
           <caret line="51" column="93" selection-start-line="51" selection-start-column="93" selection-end-line="51" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/ourdiff.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/site.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="231" column="43" selection-start-line="231" selection-start-column="43" selection-end-line="231" selection-end-column="43" />
+        <state relative-caret-position="586">
+          <caret line="253" column="1" selection-start-line="253" selection-start-column="1" selection-end-line="253" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/detox.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/site/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="151" column="2" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="2" />
           <folding />
         </state>
       </provider>

@@ -5943,20 +5943,9 @@ button.close {
 #slider img.active {
   z-index: 3; }
 
-#accordion {
-  cursor: pointer; }
-
-.fa-arrow-down {
-  font-size: 60% !important; }
-
-#accordion > h4 {
-  margin-top: 20px; }
-
-#accordion > h4:first-child {
-  margin-top: 0; }
-
-.navbar-fixed-top {
-  height: 110px; }
+.program-image {
+  width: 100%;
+  max-height: 200px; }
 
 h1, h3 {
   font-family: "Titillium Web", sans-serif !important; }
@@ -6157,5 +6146,20 @@ a.svg:after {
   margin-top: -20px; }
 
 body, .wrapper {
-  background: url("/images/img/halftone.png") !important;
+  background: url("/images/img/tileable_wood_texture.png") !important;
   background-repeat: repeat; }
+
+#accordion {
+  cursor: pointer; }
+
+.fa-arrow-down {
+  font-size: 60% !important; }
+
+#accordion > h4 {
+  margin-top: 20px; }
+
+#accordion > h4:first-child {
+  margin-top: 0; }
+
+.navbar-fixed-top {
+  height: 110px; }
