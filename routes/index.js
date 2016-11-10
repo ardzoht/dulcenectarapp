@@ -43,6 +43,7 @@ exports = module.exports = function (app) {
 	app.get('/superfoods', routes.views.superfoods);
 	app.get('/faq', routes.views.faq);
 	app.get('/detox', routes.views.detox);
+	app.get('/detox/:program', routes.views.program);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

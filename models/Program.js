@@ -14,9 +14,8 @@ Program.add({
 	name: {type: String, required: true},
 	createdAt: {type: Date, default: Date.now},
 	description: {type: String},
-	image: {type: Types.CloudinaryImage},
-	items: {type: Types.Relationship, ref: 'DetoxItem', many:true}
+	image: {type: Types.CloudinaryImage}
 });
-
+Program.relationship({ref: 'DetoxItem', path:'program' });
 Program.defaultColumns = 'name, createdAt, description, image, items';
 Program.register();
