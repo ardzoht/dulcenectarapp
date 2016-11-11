@@ -1,9 +1,17 @@
 extends ../layouts/default
 
+mixin item(item)
+	img(src=item.image.secure_url)
+	
 block content
 	div.header-title
 		div.container
 			div.text-center
-				h2.title detox
-
-
+				h2.title #{data.program_obj.name}
+			div.row
+				div.col-md-4
+					div.slider-images.card.card-raised
+						each item in data.items
+							+item(item)
+				div.col-md-8
+					h5.description.card #{data.program_obj.description}

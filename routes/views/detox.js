@@ -14,7 +14,6 @@ exports = module.exports = function (req, res) {
 	
 	locals.data = {
 		programs: [],
-		items: []
 	};
 	
 	view.on('init', function(next) {

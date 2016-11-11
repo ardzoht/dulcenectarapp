@@ -32,4 +32,13 @@ function cycleImages(){
 
 $(document).ready(function(){
 	setInterval('cycleImages()', 3500);
+	$('.slider-images').slick({
+		arrows:true,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear',
+		prevArrow: '<span class="fa fa-angle-left"></span>',
+		nextArrow: '<span class="fa fa-angle-right"></span>'
+	});
 });

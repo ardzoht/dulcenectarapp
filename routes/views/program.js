@@ -1,5 +1,4 @@
 var keystone = require('keystone');
-var async = require('async');
 
 exports = module.exports = function (req, res) {
 
@@ -16,21 +15,21 @@ exports = module.exports = function (req, res) {
 	};
 
 	view.on('init', function (next) {
-		console.log(req.params.program);
 		if(req.params.program) {
 			var q = keystone.list('DetoxItem').model.find();
 
 			keystone.list('Program').model.findOne({slug: locals.filters.program}).exec(function (err, result) {
-				currProgram = result;
-				q.where('program', currProgram.id).exec(function(err, results) {
+				locals.data.program_obj = result;
+				console.log(locals.data.program_obj);
+				q.where('program', locals.data.program_obj.id).exec(function(err, results) {
 					locals.data.items = results;
-					console.log(locals.data.items);
+					next(err);
 				});
-				next(err);
 			});
 
 		}
 	});
+	
 	// Render the view
 	view.render('program');
 };

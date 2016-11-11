@@ -5947,6 +5947,35 @@ button.close {
   width: 100%;
   max-height: 200px; }
 
+.fa-angle-left, .fa-angle-right {
+  font-size: 300% !important; }
+
+.fa-angle-left.slick-arrow {
+  border: medium none;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  line-height: 0;
+  margin-left: 30%;
+  outline: medium none;
+  padding: 0;
+  position: absolute;
+  top: 90%;
+  width: 20px; }
+
+.fa-angle-right.slick-arrow {
+  border: medium none;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  line-height: 0;
+  margin-left: 60%;
+  outline: medium none;
+  padding: 0;
+  position: absolute;
+  top: 90%;
+  width: 20px; }
+
 h1, h3 {
   font-family: "Titillium Web", sans-serif !important; }
 
