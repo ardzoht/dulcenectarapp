@@ -60,6 +60,9 @@ function onChangeDetoxItem() {
 	$('.slick-next').click(function() {
 		loadDetoxData();
 	});
+	$('.slick-prev').click(function() {
+		loadDetoxData();
+	});
 }
 
 $(document).ready(function(){
