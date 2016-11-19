@@ -54,6 +54,8 @@ function loadDetoxData() {
 	var item = local_data.items[firstIndex];
 	$('#itemTitle').text(item.name);
 	$('#itemDescription').text(item.description);
+	$('#itemIng').text(item.ingredients);
+	$('#itemPerks').text(item.properties);
 }
 
 function onChangeDetoxItem() {

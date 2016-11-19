@@ -20,8 +20,8 @@ exports = module.exports = function (req, res) {
 
 			keystone.list('Program').model.findOne({slug: locals.filters.program}).exec(function (err, result) {
 				locals.data.program_obj = result;
-				console.log(locals.data.program_obj);
-				q.where('program', locals.data.program_obj.id).exec(function(err, results) {
+				q.where('program', locals.data.program_obj.id).sort('description').exec(function(err, results) {
+					console.log(results);
 					locals.data.items = results;
 					next(err);
 				});
