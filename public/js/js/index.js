@@ -43,19 +43,22 @@ function loadDetoxSlider() {
 }
 
 function loadDetoxData() {
-	var $active = $('.slick-current.slick-active');
-	var slug = $active[0].alt;
-	indexes = $.map(local_data.items, function(obj, index) {
-		if(obj.slug == slug) {
-			return index;
-		}
-	})
-	firstIndex = indexes[0];
-	var item = local_data.items[firstIndex];
-	$('#itemTitle').text(item.name);
-	$('#itemDescription').text(item.description);
-	$('#itemIng').text(item.ingredients);
-	$('#itemPerks').text(item.properties);
+	console.log(top.location.pathname.substr(0,7));
+	if (top.location.pathname.substr(0,7) === '/detox/')
+	{
+		var $active = $('.slick-current.slick-active');
+		var slug = $active[0].alt;
+		indexes = $.map(local_data.items, function (obj, index) {
+			if (obj.slug == slug) {
+				return index;
+			}
+		})
+		firstIndex = indexes[0];
+		var item = local_data.items[firstIndex];
+		$('#itemTitle').text(item.name);
+		$('#itemIng').text(item.ingredients);
+		$('#itemPerks').text(item.properties);
+	}
 }
 
 function onChangeDetoxItem() {
