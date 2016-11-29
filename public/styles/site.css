@@ -5864,12 +5864,7 @@ button.close {
   margin-top: 5%; }
 
 .blog-container {
-  margin-top: 10%;
-  background-image: url("/images/img/_MG_6806.jpg");
-  -moz-box-shadow: inset 0 0 7px #000000;
-  -webkit-box-shadow: inset 0 0 7px #000000;
-  box-shadow: inset 0 0 7px #000000;
-  background-position: 30% 20%; }
+  margin-top: 10%; }
 
 .title-blog {
   color: white;
@@ -6167,3 +6162,6 @@ body, .wrapper {
 
 .navbar-fixed-top {
   height: 110px; }
+
+li {
+  list-style-type: none; }

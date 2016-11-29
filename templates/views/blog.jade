@@ -24,10 +24,10 @@ mixin post(post)
 
 block intro
 	.container-fluid.blog-container
-		h2.title.text-center(style="color:white;")= data.category ? data.category.name : 'blog'
+		h2.title.text-center= data.category ? data.category.name : 'blog'
 
 block content
-	.container-fluid.posts-container: .row
+	.container: .row
 		.col-sm-8.col-md-9
 			if filters.category && !data.category
 				h3.text-muted Categoría invalida.
@@ -41,8 +41,6 @@ block content
 							|  de 
 							strong #{data.posts.total}
 							|  posts.
-					else
-						h4.text-weight-normal Mostrando #{utils.plural(data.posts.results.length, '* post')}.
 					.blog
 						each post in data.posts.results
 							+post(post)

@@ -3,7 +3,7 @@ extends ../layouts/default
 block content
 	.container-fluid.post-container: .row: .col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
 		article
-			p: a(href='/blog') &larr; regreso al blog
+			p: a(href='/blog', style="color:#152A47;") &larr; regreso al blog
 			hr
 			if !data.post
 				h2 Post inválido.

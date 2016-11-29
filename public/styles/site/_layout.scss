@@ -53,11 +53,6 @@
 
 .blog-container {
 	margin-top: $size-medium;
-	background-image: url('/images/img/_MG_6806.jpg');
-	-moz-box-shadow:    inset 0 0 7px $black-color;
-	-webkit-box-shadow: inset 0 0 7px $black-color;
-	box-shadow:         inset 0 0 7px $black-color;
-	background-position: 30% 20%;
 }
 
 .title-blog {
@@ -389,3 +384,5 @@ body, .wrapper {
 .navbar-fixed-top {
   height: 110px;
 }
+
+li {list-style-type: none;}
