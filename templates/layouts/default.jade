@@ -51,14 +51,14 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			nav(role="navigation").navbar.navbar-fixed-top.navbar-custom
+			nav.navbar.navbar-fixed-top.navbar-custom
 				.navbar-header
 					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
 						span.sr-only Toggle navigation
 						span.icon-bar
 						span.icon-bar
 						span.icon-bar
-					img.img-responsive(src='/images/img/logodulcenectar.png', width='90', class="logonectar")
+					img.img-responsive(src='/images/img/logodulcenectar.png', width='90', class="logonectar", alt="Dulce Nectar")
 				.collapse.navbar-collapse
 					ul.nav.navbar-nav.navbar-left
 						each link in navLinks
@@ -117,7 +117,7 @@ html
 		//- FOOTER
 		.container: #footer
 			footer
-				img.footer-logo(src="/images/img/dulcenectartitle-word-logo.png")
+				img.footer-logo(src="/images/img/dulcenectartitle-word-logo.png", alt="Dulce Nectar Footer")
 				span.text-center.footer-message © Copyright 2016, Dulce Néctar
 		//- JAVASCRIPT
 

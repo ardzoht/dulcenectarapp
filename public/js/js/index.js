@@ -85,7 +85,7 @@ function onChangeDetoxItem() {
 	});
 }
 
-$(document).ready(function () {
+$(window).ready(function () {
 	loadAccordion();
 	loadDetoxSlider();
 	loadDetoxData();
