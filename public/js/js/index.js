@@ -73,8 +73,10 @@ function loadDetoxData() {
 
 function toTag(target) {
 	var text = $(target).html().split(',');
-	var newtag = text.map(item => '<span class="label label-success">' + item + '</span> &nbsp; &nbsp;').join('');
-	$(target).html('').append(newtag);
+	var newtag = text.map(function(item) {
+		return '<span class="label label-success">' + item + '</span>&nbsp; &nbsp;';
+	});
+	$(target).html('').append(newtag.join(''));
 }
 
 function onChangeDetoxItem() {
@@ -89,7 +91,9 @@ function onChangeDetoxItem() {
 $(window).ready(function () {
 	loadAccordion();
 	loadDetoxSlider();
-	loadDetoxData();
+	if (top.location.pathname.substr(0, 7) === '/detox/') {
+		loadDetoxData();
+	}
 	console.log(top.location.pathname.substr(0));
 	if (top.location.pathname.substr(0) === '/') {
 		loadInstafeed();
