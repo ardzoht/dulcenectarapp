@@ -89,6 +89,8 @@ $(window).ready(function () {
 	loadAccordion();
 	loadDetoxSlider();
 	loadDetoxData();
+	if (top.location.pathname.substr(0, 7) === '/detox/') {
 	feed.run();
+	}
 	onChangeDetoxItem();
 });
