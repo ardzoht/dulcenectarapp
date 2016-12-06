@@ -1,20 +1,23 @@
-var feed = new Instafeed({
-	get: 'user',
-	//userId: '3284850548',
-	userId: '6719060',
-	accessToken: '6719060.1677ed0.dfba186d4fe94487801c25abf8615978',
-	//accessToken: '3284850548.1677ed0.26b34edc44fe47a5922cd17a26211ba6',
-	sortBy: 'most-recent',
-	template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-	resolution: 'low_resolution',
-	limit: 4,
-	after: function () {
-		console.log("Images retrieved");
-	},
-	error: function (err) {
-		console.log(err);
-	}
-});
+function loadInstafeed() {
+	var feed = new Instafeed({
+		get: 'user',
+		//userId: '3284850548',
+		userId: '6719060',
+		accessToken: '6719060.1677ed0.dfba186d4fe94487801c25abf8615978',
+		//accessToken: '3284850548.1677ed0.26b34edc44fe47a5922cd17a26211ba6',
+		sortBy: 'most-recent',
+		template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+		resolution: 'low_resolution',
+		limit: 4,
+		after: function () {
+			console.log("Images retrieved");
+		},
+		error: function (err) {
+			console.log(err);
+		}
+	});
+	feed.run();
+}
 
 function loadAccordion() {
 	$(function () {
@@ -60,7 +63,6 @@ function loadDetoxData() {
 		})
 		firstIndex = indexes[0];
 		var item = local_data.items[firstIndex];
-		console.log(item.properties);
 		$('#itemTitle').text(item.name);
 		$('#itemIng').attr("src", item.image_ing.secure_url);
 		$('#itemPerks').text(item.properties);
@@ -72,7 +74,6 @@ function loadDetoxData() {
 function toTag(target) {
 	var text = $(target).html().split(',');
 	var newtag = text.map(item => '<span class="label label-success">' + item + '</span> &nbsp; &nbsp;').join('');
-	console.log(newtag);
 	$(target).html('').append(newtag);
 }
 
@@ -89,8 +90,9 @@ $(window).ready(function () {
 	loadAccordion();
 	loadDetoxSlider();
 	loadDetoxData();
-	if (top.location.pathname.substr(0, 7) === '/detox/') {
-	feed.run();
+	console.log(top.location.pathname.substr(0));
+	if (top.location.pathname.substr(0) === '/') {
+		loadInstafeed();
 	}
 	onChangeDetoxItem();
 });
