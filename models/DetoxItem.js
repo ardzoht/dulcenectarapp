@@ -18,8 +18,8 @@ DetoxItem.add({
 	createdAt: {type: Date, default: Date.now},
 	description: {type: String},
 	properties: {type: String},
-	ingredients: {type: String},
 	image: {type: Types.CloudinaryImage},
+	image_ing: {type: Types.CloudinaryImage},
 	program: {type: Types.Relationship, ref: 'Program'}
 });
 
