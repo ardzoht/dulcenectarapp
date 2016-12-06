@@ -6216,3 +6216,10 @@ li {
 
 #itemPerks {
   margin: 5%; }
+
+#instafeed > a > img {
+  padding: 5px;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+  filter: grayscale(100%); }

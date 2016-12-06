@@ -440,3 +440,11 @@ li {list-style-type: none;}
 #itemPerks {
   margin: $size-small;
 }
+
+#instafeed > a > img {
+  padding: 5px;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+  filter: grayscale(100%);
+}
