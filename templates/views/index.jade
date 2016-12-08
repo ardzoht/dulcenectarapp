@@ -2,6 +2,16 @@ extends ../layouts/default
 
 block content
 	div.container-fluid
+		div(id="myModal", class="modal")
+			div.modal-content
+				div.modal-header
+					span.close cerrar
+					h1 Suscríbete!
+				div.modal-body
+					p Compártenos tu email 
+					input(class="inputmodal", type="text", name="email")
+				div.modal-footer
+					h3 Dulce Néctar
 		div.row
 			div#slider
 				img.active.img-responsive(src="/images/img/Portada.jpg")
