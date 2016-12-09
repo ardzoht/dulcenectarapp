@@ -144,3 +144,5 @@ html
 		//- Include template-specific javascript files by extending the js block
 		block js
 		script(src='/js/js/index.js')
+		script(type="text/javascript", src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js", data-dojo-config="usePlainJson: true, isDebug: false")
+		script(type="text/javascript") require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"39f3a6c2f13ba37a545033f25","lid":"826643b7e8"}) })
