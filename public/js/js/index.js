@@ -94,8 +94,8 @@ function loadModal() {
 	$('.mc-modal').css({'z-index':'9999'});
 	$('.mc-modal').css({'bottom':'0'});
 	$('.mc-modal').css({'top':'0'});
-	$('.mc-modal').css({'margin-top':'11%'});
-
+	$('.mc-modal').css({'margin-top':'15%'});
+	console.log($("iframe").contents().find("label").text("Correo Electrónico"));
 }
 
 $(window).ready(function () {
@@ -106,7 +106,7 @@ $(window).ready(function () {
 	}
 	console.log(top.location.pathname.substr(0));
 	if (top.location.pathname.substr(0) === '/') {
-		setTimeout(loadModal, 2500);
+		setTimeout(loadModal, 1500);
 		loadInstafeed();
 	}
 	onChangeDetoxItem();
