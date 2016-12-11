@@ -90,7 +90,6 @@ function onChangeDetoxItem() {
 
 function loadModal() {
 	// Get the modal
-	console.log('modal');
 	$('.mc-modal').css({'z-index':'9999'});
 	$('.mc-modal').css({'bottom':'0'});
 	$('.mc-modal').css({'top':'0'});
