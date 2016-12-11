@@ -1,17 +1,36 @@
 extends ../layouts/default
 
 block content
+	div(id="myModal", class="modal")
+		div.modal-content
+			link(href='//cdn-images.mailchimp.com/embedcode/classic-10_7.css', rel='stylesheet', type='text/css')
+			style(type='text/css').
+				#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+				We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+			#mc_embed_signup
+				form#mc-embedded-subscribe-form.validate(action='//dulcenectar.us14.list-manage.com/subscribe/post?u=39f3a6c2f13ba37a545033f25&id=826643b7e8', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+					#mc_embed_signup_scroll
+						span.fa.fa-times.close
+						h2 Únete a nuestra comunidad! 
+						h4 Recibe en tu correo tips, promociones, recetas e información para mejorar tu estilo de vida
+						.indicates-required
+							span.asterisk *
+							|  requerido
+						.mc-field-group
+							label(for='mce-EMAIL')
+							| Correo electrónico  
+							span.asterisk *
+							input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
+						#mce-responses.clear
+							#mce-error-response.response(style='display:none')
+							#mce-success-response.response(style='display:none')
+						// real people should not fill this in and expect good things - do not remove this or risk form bot signups
+						div(style='position: absolute; left: -5000px;', aria-hidden='true')
+							input(type='text', name='b_39f3a6c2f13ba37a545033f25_826643b7e8', tabindex='-1', value='')
+						.clear
+							input#mc-embedded-subscribe.button(type='submit', value='Sí quiero!', name='subscribe', class="inputmodal")
 	div.container-fluid
-		div(id="myModal", class="modal")
-			div.modal-content
-				div.modal-header
-					span.close cerrar
-					h1 Suscríbete!
-				div.modal-body
-					p Compártenos tu email 
-					input(class="inputmodal", type="text", name="email")
-				div.modal-footer
-					h3 Dulce Néctar
 		div.row
 			div#slider
 				img.active.img-responsive(src="/images/img/Portada.jpg")

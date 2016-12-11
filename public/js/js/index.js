@@ -90,11 +90,26 @@ function onChangeDetoxItem() {
 
 function loadModal() {
 	// Get the modal
-	$('.mc-modal').css({'z-index':'9999'});
-	$('.mc-modal').css({'bottom':'0'});
-	$('.mc-modal').css({'top':'0'});
-	$('.mc-modal').css({'margin-top':'15%'});
-	console.log($("iframe").contents().find("label").text("Correo Electrónico"));
+	var modal = document.getElementById('myModal');
+
+	window.onload = function() {
+		modal.style.display = "block";
+	}
+
+	// Get the <span> element that closes the modal
+	var span = $('.close');
+	console.log(span);
+	// When the user clicks on <span> (x), close the modal
+	span.click(function() {
+		modal.style.display = "none";
+	});
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
 }
 
 $(window).ready(function () {
@@ -105,7 +120,7 @@ $(window).ready(function () {
 	}
 	console.log(top.location.pathname.substr(0));
 	if (top.location.pathname.substr(0) === '/') {
-		setTimeout(loadModal, 1500);
+		loadModal();
 		loadInstafeed();
 	}
 	onChangeDetoxItem();
