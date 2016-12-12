@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Titillium+Web';
 
+
 #header {
 	margin-top: $size-small;
 }
@@ -504,4 +505,14 @@ li {list-style-type: none;}
 
 #mc_embed_signup .button:hover {
   background-color: #CF3000 !important;
+}
+
+.blogtitle {
+  font-family: 'Lora', serif !important;
+}
+
+a, a:hover { 
+    text-decoration:none;
+    cursor: pointer;
+    color:#000000 !important;
 }

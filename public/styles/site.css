@@ -6286,3 +6286,11 @@ li {
 
 #mc_embed_signup .button:hover {
   background-color: #CF3000 !important; }
+
+.blogtitle {
+  font-family: 'Lora', serif !important; }
+
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000 !important; }
