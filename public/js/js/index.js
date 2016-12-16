@@ -112,6 +112,20 @@ function loadModal() {
 	}
 }
 
+function loadFaq() {
+	$('h4').click(function() {
+		var self = $(this);
+		var contains = $(this).attr('class').indexOf('ui-state-active');
+		var arrow = self.find('i');
+		if(contains === -1) {
+			$('h4>i').removeClass('fa-arrow-down').addClass('fa-arrow-right');
+			arrow.removeClass('fa-arrow-right').addClass('fa-arrow-down');
+		} else {
+			arrow.removeClass('fa-arrow-down').addClass('fa-arrow-right');
+		}
+	});
+}
+
 $(window).ready(function () {
 	loadAccordion();
 	loadDetoxSlider();
@@ -122,6 +136,9 @@ $(window).ready(function () {
 	if (top.location.pathname.substr(0) === '/') {
 		loadModal();
 		loadInstafeed();
+	}
+	if (top.location.pathname.substr(0,4) === '/faq') {
+		loadFaq();
 	}
 	onChangeDetoxItem();
 });

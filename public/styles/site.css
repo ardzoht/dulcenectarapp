@@ -6192,9 +6192,6 @@ body, .wrapper {
 #accordion {
   cursor: pointer; }
 
-.fa-arrow-down {
-  font-size: 60% !important; }
-
 #accordion > h4 {
   margin-top: 20px; }
 
@@ -6320,3 +6317,6 @@ a, a:hover {
 
 .perk-label {
   font-size: 12px !important; }
+
+.font-faq {
+  font-size: 15px !important; }
