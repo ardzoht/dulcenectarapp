@@ -38,6 +38,10 @@ keystone.set('locals', {
 	env: keystone.get('env'),
 	utils: keystone.utils,
 	editable: keystone.content.editable,
+	ga: {
+        property: 'UA-88778171-1',
+        domain: process.env.GA_SITE_DOMAIN
+    }
 });
 
 // Load your project's Routes
@@ -76,5 +80,7 @@ keystone.set('cloudinary config', 'cloudinary://298382599297723:Ky0PSwTN4du5F5GX
 
 // Start Keystone to connect to your database and initialise the web server
 keystone.set('mongo', "mongodb://ardzoht:101010as@ds061246.mlab.com:61246/dulcenectardb")
+
+keystone.set('ga property', 'UA-88778171-1');
 
 keystone.start();

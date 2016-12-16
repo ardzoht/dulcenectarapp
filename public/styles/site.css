@@ -6217,6 +6217,10 @@ li {
 #itemPerks {
   margin: 5%; }
 
+#itemPerks > span {
+  margin-bottom: 5%;
+  display: inline-block; }
+
 #instafeed > a > img {
   padding: 5px;
   border-radius: 10px;
@@ -6231,26 +6235,21 @@ li {
   /* Stay in place */
   z-index: 9999;
   /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
+  width: 70%;
   /* Full width */
   height: 100%;
   /* Full height */
-  overflow: auto;
+  overflow: hidden;
   /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
   padding-top: 10%;
-  color: white;
-  font-family: "Titillium Web", sans-serif !important; }
+  margin: 0 auto;
+  margin-top: 5%; }
 
 /* Modal Content/Box */
 .modal-content {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.4);
   margin: auto;
-  padding: 0;
+  padding: 3%;
   width: 80%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -6259,31 +6258,15 @@ li {
 
 /* The Close Button */
 .close {
-  color: white !important;
   float: right;
-  font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: black !important; }
 
 .close:hover,
 .close:focus {
-  color: white;
   text-decoration: none;
-  cursor: pointer; }
-
-/* Modal Header */
-.modal-header {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white; }
-
-/* Modal Body */
-.modal-body {
-  background-color: rgba(0, 0, 0, 0.4);
-  margin: 0 !important; }
-
-/* Modal Footer */
-.modal-footer {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white; }
+  cursor: pointer;
+  cursor: hand; }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -6302,5 +6285,38 @@ li {
     top: 0;
     opacity: 1; } }
 
-.inputmodal {
-  color: black; }
+#mc_embed_signup .button {
+  background-color: #EE836E !important; }
+
+#mc_embed_signup .button:hover {
+  background-color: #CF3000 !important; }
+
+.blogtitle {
+  font-family: 'Lora', serif !important; }
+
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000 !important; }
+
+.nav-pag {
+  margin: 10% 0 0 0; }
+
+.pagination > li > a {
+  background-color: transparent !important; }
+
+.pagination > li.active > a {
+  background-color: green !important;
+  color: white !important;
+  cursor: pointer; }
+
+.pagination > li > a:hover,
+.pagination > li > a:focus {
+  background-color: green !important;
+  color: white !important; }
+
+.card-block > p {
+  padding: 10px; }
+
+.perk-label {
+  font-size: 12px !important; }
