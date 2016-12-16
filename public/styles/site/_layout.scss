@@ -415,6 +415,10 @@ body, .wrapper {
   margin-top: 20px;
 }
 
+#accordion > div > ul > li{
+  list-style-type: disc !important;
+}
+
 #accordion > h4:first-child {
   margin-top: 0;
 }
