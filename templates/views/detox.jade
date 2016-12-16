@@ -2,11 +2,12 @@ extends ../layouts/default
 
 mixin program(program)
 	div.col-md-4
-		div.card
+		div
 			img.card-image.program-image(src=program.image.url)
-			div.card-block
-				h4.card-title= program.name
-				a.btn.btn-primary(href='/detox/' + program.slug) Más	
+			div.card
+				div.card-block
+					h4.card-title= program.name
+					a.btn.btn-primary(href='/detox/' + program.slug) Más	
 
 block content
 	div.header-title
