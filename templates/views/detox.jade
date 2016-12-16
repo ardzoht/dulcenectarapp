@@ -6,13 +6,14 @@ mixin program(program)
 			img.card-image.program-image(src=program.image.url)
 			div.card-block
 				h4.card-title= program.name
+				p.text-justify= program.description
 				a.btn.btn-primary(href='/detox/' + program.slug) Más	
 
 block content
 	div.header-title
 		div.container
 			div.text-center
-				h2.title detox
+				h2.title planes detox
 				div.row: .col-md-12
 					each program in data.programs
 						+program(program)

@@ -33,7 +33,7 @@ block content
 			else
 				if data.posts.results.length
 					if data.posts.totalPages > 1
-						h4.text-weight-normal Mostrando
+						h4.text-weight-normal Mostrando 
 							strong #{data.posts.first}
 							|  hasta 
 							strong #{data.posts.last}
@@ -47,25 +47,24 @@ block content
 							div.col-sm-4.col-md-4
 								+post(post)
 					
-					if data.posts.totalPages > 1
-						ul.pagination
-							if data.posts.previous
-								li: a(href='?page=' + data.posts.previous): span.glyphicon.glyphicon-chevron-left
-							else
-								li.disabled: a(href='?page=' + 1): span.glyphicon.glyphicon-chevron-left
-							each p, i in data.posts.pages
-								li(class=data.posts.currentPage == p ? 'active' : null)
-									a(href='?page=' + (p == '...' ? (i ? data.posts.totalPages : 1) : p ))= p
-							if data.posts.next
-								li: a(href='?page=' + data.posts.next): span.glyphicon.glyphicon-chevron-right
-							else
-								li.disabled: a(href='?page=' + data.posts.totalPages): span.entypo.glyphicon.glyphicon-chevron-right
-				else
-					if data.category
-						h3.text-muted No hay posts en la categoría #{data.category.name}.
-					else
-						h3.text-muted Aún no hay posts.
-		
+		if data.posts.totalPages > 1
+			.row
+				.col-md-5.col-sm-5
+				.col-md-4.col-sm-4
+					ul.pagination
+						if data.posts.previous
+							li: a(href='?page=' + data.posts.previous): span.glyphicon.glyphicon-chevron-left
+						else
+							li.disabled: a(href='?page=' + 1): span.glyphicon.glyphicon-chevron-left
+						each p, i in data.posts.pages
+							li(class=data.posts.currentPage == p ? 'active' : null)
+								a(href='?page=' + (p == '...' ? (i ? data.posts.totalPages : 1) : p ))= p
+						if data.posts.next
+							li: a(href='?page=' + data.posts.next): span.glyphicon.glyphicon-chevron-right
+						else
+							li.disabled: a(href='?page=' + data.posts.totalPages): span.entypo.glyphicon.glyphicon-chevron-right
+				.col-md-3.col-sm-3													
+
 	//	if data.categories.length
 			.col-sm-4.col-md-3
 				h2 Categorias

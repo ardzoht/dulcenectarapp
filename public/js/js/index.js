@@ -74,7 +74,7 @@ function loadDetoxData() {
 function toTag(target) {
 	var text = $(target).html().split(',');
 	var newtag = text.map(function(item) {
-		return '<span class="label label-success">' + item + '</span>&nbsp; &nbsp;';
+		return '<span class="label label-success perk-label">' + item + '</span>&nbsp; &nbsp;';
 	});
 	$(target).html('').append(newtag.join(''));
 }
