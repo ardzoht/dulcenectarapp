@@ -20,6 +20,7 @@ DetoxItem.add({
 	properties: {type: String},
 	image: {type: Types.CloudinaryImage},
 	image_ing: {type: Types.CloudinaryImage},
+	info : {type: String},
 	program: {type: Types.Relationship, ref: 'Program'}
 });
 

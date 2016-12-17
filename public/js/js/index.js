@@ -66,7 +66,9 @@ function loadDetoxData() {
 		$('#itemTitle').text(item.name);
 		$('#itemIng').attr("src", item.image_ing.secure_url);
 		$('#itemPerks').text(item.properties);
+		$('#itemInfo').text(item.info);
 		toTag('#itemPerks');
+		toList('#itemInfo');
 	}
 }
 
@@ -75,6 +77,14 @@ function toTag(target) {
 	var text = $(target).html().split(',');
 	var newtag = text.map(function(item) {
 		return '<span class="label label-success perk-label">' + item + '</span>&nbsp; &nbsp;';
+	});
+	$(target).html('').append(newtag.join(''));
+}
+
+function toList(target) {
+	var text = $(target).html().split('-');
+	var newtag = text.map(function(item) {
+		return item + '<br>';
 	});
 	$(target).html('').append(newtag.join(''));
 }
