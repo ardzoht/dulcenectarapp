@@ -1,10 +1,10 @@
 function loadInstafeed() {
 	var feed = new Instafeed({
 		get: 'user',
-		//userId: '3284850548',
-		userId: '6719060',
-		accessToken: '6719060.1677ed0.dfba186d4fe94487801c25abf8615978',
-		//accessToken: '3284850548.1677ed0.26b34edc44fe47a5922cd17a26211ba6',
+		userId: '3284850548',
+		//userId: '6719060',
+		//accessToken: '6719060.1677ed0.dfba186d4fe94487801c25abf8615978',
+		accessToken: '3284850548.1677ed0.26b34edc44fe47a5922cd17a26211ba6',
 		sortBy: 'most-recent',
 		template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
 		resolution: 'low_resolution',
