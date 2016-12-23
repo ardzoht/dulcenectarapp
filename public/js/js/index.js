@@ -123,8 +123,10 @@ function loadModal() {
 }
 
 function loadFaq() {
+	var image = $('#rightImage');
 	$('h4').click(function() {
 		var self = $(this);
+		var id = self[0].id.substring(self[0].id.length-2,self[0].id.length);
 		var contains = $(this).attr('class').indexOf('ui-state-active');
 		var arrow = self.find('i');
 		if(contains === -1) {
@@ -132,6 +134,25 @@ function loadFaq() {
 			arrow.removeClass('fa-arrow-right').addClass('fa-arrow-down');
 		} else {
 			arrow.removeClass('fa-arrow-down').addClass('fa-arrow-right');
+		}
+		if(id === '-1') {
+			image.attr("src", "/images/img/faq_2.png");
+			image.removeClass("img-circle");			
+		} else if (id === '-9' ) {
+			image.attr("src", "/images/img/faq_10.png");
+			image.removeClass("img-circle");			
+		} else if (id === '10') {
+			image.attr("src", "/images/img/faq_11.jpg");
+			image.removeClass("img-circle");			
+		} else if (id === '11') {
+			image.attr("src", "/images/img/faq_12.jpg");
+			image.removeClass("img-circle");			
+		} else if (id === '12') {
+			image.attr("src", "/images/img/faq_13.png");
+			image.removeClass("img-circle");			
+		} else {
+			image.attr("src", "/images/img/Rayito.jpg");
+			image.addClass("img-circle");
 		}
 	});
 }
