@@ -157,19 +157,54 @@ function loadFaq() {
 	});
 }
 
+function calculateDetoxPrice() {
+	var days = $('.pagination_detox li');
+	var total = $('#quantity');
+	var link = $('.pagination_detox li a');
+	console.log(link);
+	days.click(function() {
+		switch(this.id) {
+			case 'one_day':
+				total.html('Total: $500.00');
+				break;
+			case 'two_day':
+				total.html('Total: $900.00');
+				break;
+			case 'three_day':
+				total.html('Total: $1,300.00');
+				break;
+			case 'four_day':
+				total.html('Total: $1,600.00');
+				break;
+			case 'five_day':
+				total.html('Total: $2,000.00');
+				break;
+			default:
+				total.html('Total: $0.00');
+				break;
+		}
+	});
+	link.click(function(e) {
+		e.preventDefault();
+	});
+}
+
 $(window).ready(function () {
 	loadAccordion();
 	loadDetoxSlider();
 	if (top.location.pathname.substr(0, 7) === '/detox/') {
 		loadDetoxData();
 	}
-	console.log(top.location.pathname.substr(0));
-	if (top.location.pathname.substr(0) === '/') {
+	//console.log(top.location.pathname.substr(0));
+	else if (top.location.pathname.substr(0) === '/') {
 		loadModal();
 		loadInstafeed();
 	}
-	if (top.location.pathname.substr(0,4) === '/faq') {
+	else if (top.location.pathname.substr(0,4) === '/faq') {
 		loadFaq();
+	}
+	else if (top.location.pathname.substr(0,6) === '/detox') {
+		calculateDetoxPrice();
 	}
 	onChangeDetoxItem();
 });

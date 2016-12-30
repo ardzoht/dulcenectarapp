@@ -8,6 +8,20 @@ mixin program(program)
 				div.card-block
 					h4.card-title= program.name	
 					p.text-justify= program.description
+					p.text-center.description Días:
+					nav
+						ul.pagination.pagination_detox
+							li(id="one_day")
+								a(href="#") 1
+							li(id="two_day")
+								a(href="#") 2
+							li(id="three_day")
+								a(href="#") 3 
+							li(id="four_day")
+								a(href="#") 4
+							li(id="five_day")
+								a(href="#") 5
+					p.text-center.description.quantity(id="quantity") Total: $0.00												
 					a.btn.btn-primary(href='/detox/' + program.slug) Más	
 
 block content

@@ -6302,17 +6302,26 @@ a, a:hover {
 .nav-pag {
   margin: 10% 0 0 0; }
 
-.pagination > li > a {
+.pagination_blog > li > a {
   background-color: transparent !important; }
 
-.pagination > li.active > a {
+.pagination_blog > li.active > a {
   background-color: green !important;
   color: white !important;
   cursor: pointer; }
 
-.pagination > li > a:hover,
-.pagination > li > a:focus {
+.pagination_blog > li > a:hover,
+.pagination_blog > li > a:focus {
   background-color: green !important;
+  color: white !important; }
+
+.pagination_detox > li > a {
+  color: black !important;
+  font-size: 1.5em !important; }
+
+.pagination_detox > li > a:hover,
+.pagination_detox > li > a:focus {
+  background-color: black !important;
   color: white !important; }
 
 .card-block > p {
