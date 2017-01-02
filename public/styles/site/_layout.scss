@@ -206,20 +206,29 @@ h1, h3 {
 
 .logo-fb-header {
   width: 50px;
-  height:auto;
+  min-height:auto;
   @include vertical-align();
 }
 
 .logo-insta-header {
   width: 60px;
-  height:auto;
+  min-height:auto;
   @include vertical-align();
 }
 
 .logo-mail-header {
   width: 55px;
-  height: auto;
+  min-height: auto;
   @include vertical-align();
+}
+
+.navbar .navbar-toggle {
+    margin-right:15px !important;
+    margin-top: 30px;
+}
+
+a.svg {
+  padding: 15px 15px 0 15px !important;
 }
 
 a.svg:after {
@@ -424,7 +433,7 @@ body, .wrapper {
 }
 
 .navbar-fixed-top {
-  height: 110px;
+  min-height: 110px;
 }
 
 li {list-style-type: none;}
