@@ -583,3 +583,8 @@ a, a:hover {
 .title-info {
   padding-top: 10px;
 }
+
+.navlogos>li {
+  float: left;
+  margin-left: $size-small;
+}
