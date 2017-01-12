@@ -451,7 +451,7 @@ li {list-style-type: none;}
   margin: $size-small;
 }
 
-#itemPerks > span { 
+#itemPerks > span {
   margin-bottom: $size-small;
   display: inline-block;
 }
@@ -461,7 +461,6 @@ li {list-style-type: none;}
   border-radius: 10px;
   width: 30%;
   height: auto;
-  filter: grayscale(100%);
 }
 
 .modal {
@@ -504,7 +503,7 @@ li {list-style-type: none;}
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top: -300px; opacity: 0} 
+    from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
 
@@ -525,13 +524,13 @@ li {list-style-type: none;}
   font-family: 'Lora', serif !important;
 }
 
-a, a:hover { 
+a, a:hover {
     text-decoration:none;
     cursor: pointer;
     color:#000000 !important;
 }
 
-.nav-pag { 
+.nav-pag {
   margin: $size-medium 0 0 0;
 }
 
@@ -545,23 +544,23 @@ a, a:hover {
     cursor: pointer;
 }
 
-.pagination_blog > li > a:hover, 
+.pagination_blog > li > a:hover,
 .pagination_blog > li > a:focus {
     background-color: green !important;
     color: white !important;
-} 
+}
 
 .pagination_detox > li > a {
   color: black !important;
   font-size: 1.5em !important;
-  
+
 }
 
-.pagination_detox > li > a:hover, 
+.pagination_detox > li > a:hover,
 .pagination_detox > li > a:focus {
     background-color: black !important;
     color: white !important;
-} 
+}
 
 .card-block > p {
   padding: 10px;

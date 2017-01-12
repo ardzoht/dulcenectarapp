@@ -6232,8 +6232,7 @@ li {
   padding: 5px;
   border-radius: 10px;
   width: 30%;
-  height: auto;
-  filter: grayscale(100%); }
+  height: auto; }
 
 .modal {
   display: none;
