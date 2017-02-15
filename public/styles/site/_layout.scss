@@ -432,8 +432,16 @@ body, .wrapper {
   margin-top: 0;
 }
 
-.navbar-fixed-top {
-  min-height: 110px;
+@media (min-width: 800px) {
+	.navbar-fixed-top {
+	  height: 110px;
+	}
+}
+
+@media (max-width: 600px) {
+	.navbar-fixed-top {
+	  min-height: 110px;
+	}
 }
 
 li {list-style-type: none;}
